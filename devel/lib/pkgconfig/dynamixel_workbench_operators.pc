@@ -1,0 +1,8 @@
+prefix=/home/parallels/Autonomy_ws/hw4/devel
+
+Name: dynamixel_workbench_operators
+Description: Description of dynamixel_workbench_operators
+Version: 1.0.0
+Cflags: 
+Libs: -L/home/parallels/Autonomy_ws/hw4/devel/lib 
+Requires: roscpp dynamixel_workbench_msgs
