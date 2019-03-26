@@ -17,6 +17,8 @@ from cv_bridge import CvBridge, CvBridgeError
 ROSTOPIC_SET_ARM_JOINT = '/goal_dynamixel_position'
 pos_3d_cam = []
 pos_3d_world = []
+pos_2d = np.zeros(3)
+pos = [0.0,0.0,1.0]
 bridge = CvBridge()
 
 def plan_trajectory(waypoints, num):
@@ -50,15 +52,22 @@ def get_artag_pos_in_world(joint):
     return [0.0, 0.0, 0.0]
     
 
-def sub_callback(markers):
+def sub_callback(AlvarMarkers):
     global pos_3d_cam
-    for marker in markers:
-        pos = marker.pose.position
-        # ori = marker.pose.orientation
-        pos_3d_cam.append([pos.x, pos.y, pos.z])
+    global pos
+    
+    pos = [AlvarMarkers.markers[0].pose.pose.position.x,
+    AlvarMarkers.markers[0].pose.pose.position.y,
+    AlvarMarkers.markers[0].pose.pose.position.z]
+
+    # ori = marker.pose.orientation
+    
 
 def img_callback(Imgs):
+    global pos_2d
     cv_image = bridge.imgmsg_to_cv2(Imgs,"bgr8")
+    # print(pos_2d[0]/pos_2d[2])
+    cv2.circle(cv_image,((pos_2d[0]/pos_2d[2]).astype(int),(pos_2d[1]/pos_2d[2]).astype(int)),3,(0,255,0))
     cv2.imshow("Image",cv_image)
     cv2.waitKey(3)
     # cv2.destroyAllWindows()
@@ -66,6 +75,7 @@ def img_callback(Imgs):
 
 def main():
     global pos_3d_cam
+    global pos_2d
     rospy.init_node('command_joints_example', anonymous=True)
 
     intrinsic_matrix = [ 
@@ -86,27 +96,38 @@ def main():
     sub_img = rospy.Subscriber("/camera/color/image_raw", Image, img_callback)
     # rospy.sleep(2)
     # home_arm(pub)
+    
 
     for joint in target_joints:
     #   set_arm_joint(pub, joint)
       # print(joint)
     #   rospy.sleep(0.2)
       pos_3d_world.append(get_artag_pos_in_world(joint))
+      pos_3d_cam.append([pos[0], pos[1], pos[2]])
 
     # convert pos_3d_cam to 2d pos in image
     intrinsic_matrix = np.array(intrinsic_matrix)
-    pos_3d_cam = np.array(pos_3d_cam)
+    # pos_3d_cam = np.array(pos_3d_cam)
     # pos_zs = pos_3d_cam[:,2]
-    pos_2d =  intrinsic_matrix.dot(pos_3d_cam)
-    us = pos_2d[0,:]/pos_2d[2,:]
-    vs = pos_2d[1,:]/pos_2d[2,:]
+    # pos_2d =  intrinsic_matrix.dot(pos_3d_cam)
+    # pos_3d = np.array(pos)
+    # pos_2d =  intrinsic_matrix.dot(pos_3d.transpose())
+    # us = pos_2d[0,:]/pos_2d[2,:]
+    # vs = pos_2d[1,:]/pos_2d[2,:]
 
     
 
-    print("+++++++++++", pos_2d[0], pos_2d[1])
-    print(pos_3d_cam[0], pos_3d_cam[1])
+    # print("+++++++++++", pos_2d[0], pos_2d[1])
+    # print(pos_3d_cam[0], pos_3d_cam[1])
+    rate = rospy.Rate(5)
+    while not rospy.is_shutdown():
+        pos_3d = np.array(pos)
+        pos_2d =  intrinsic_matrix.dot(pos_3d.transpose())
+        us = pos_2d[0]/pos_2d[2]
+        vs = pos_2d[1]/pos_2d[2]
+        print(us.astype(int),vs)
 
-    rospy.spin()
+        rate.sleep()
     
 
     # home_arm(pub)
