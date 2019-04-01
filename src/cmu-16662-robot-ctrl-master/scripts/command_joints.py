@@ -71,7 +71,7 @@ def img_callback(Imgs):
     global pos_2d
     cv_image = bridge.imgmsg_to_cv2(Imgs,"bgr8")
     # print(pos_2d[0]/pos_2d[2])
-    cv2.circle(cv_image,((pos_2d[0]/pos_2d[2]).astype(int),(pos_2d[1]/pos_2d[2]).astype(int)),5,(0,255,0))
+    cv2.circle(cv_image,((pos_2d[0]/pos_2d[2]).astype(int),(pos_2d[1]/pos_2d[2]).astype(int)),8,(0,0,255))
     cv2.imshow("Image",cv_image)
     cv2.waitKey(3)
     # cv2.destroyAllWindows()
@@ -89,24 +89,25 @@ def main():
         [0.0,            614.494140625,  244.32691955566406], 
         [0.0,            0.0,            1.0]
     ]
+
     intrinsic_matrix = np.array(intrinsic_matrix)
 
     target_joints = [
         [0.408, 0.721, -0.471, -0.8, -0.120],
         [0.08, 0.21, -0.1, -0.7, -0.340],
+        [0.08, 0.21, -0.3, -0.6, -0.340],
         [-0.48, -0.31, 0.4, -0.7, 0.30],
-        # [-0.545, 0, 0.23, -0.6, 0.20],
+        [-0.208, -0.31, 0.4, -0.7, 0.30],
         [0.545, 0, 0.23, -1.1, -0.40],
-        [0.645, -0.541, 0.27, -0.9, 0.40],
-        [0.45, -0.541, 0.17, -0.9, 0.30],
-        [0.25, -0.541, 0.17, -0.9, 0.20],
-        [-0.25, -0.541, 0.17, -0.9, -0.230],
-        [-0.45, -0.541, 0.17, -0.9, -0.30],
-        [-0.545, -0.541, 0.17, -0.9, -0.40],
-        [-0.3, -0.541, 0.17, -0.9, -0.10],
+        [0.35, -0.41, 0.17, -0.9, 0.30],
+        [0.25, -0.41, 0.17, -0.9, 0.20],
+        [-0.15, -0.41, 0.17, -0.9, -0.230],
+        [-0.25, -0.41, 0.17, -0.9, -0.30],
+        [-0.28, -0.41, 0.17, -0.9, -0.10],
         [0,0,0,-0.9,0],
-        [0,0,0,-1.1,0],
-        [0,0,0,-1.3,0]
+        [-0.1,0,0,-1.1,0],
+        [0.1,0,0,-1.3,0],
+        [0,0,0,-1.6,0]
     ]
 
     a_cuboid_pos = [[-0.08960255235433578, 0.00038756412686780095, 0.1852499544620514], 
@@ -142,9 +143,12 @@ def main():
     [-0.03511735051870346, -0.3080369830131531, 0.40025001764297485], 
     [-0.046203020960092545, -0.3839654326438904, 0.4052642583847046], 
     [0.0030373409390449524, -0.3752831220626831, 0.4052642583847046]] 
+
+    ar_pose_save = np.load("ar_pose_save.npy")
+    print(ar_pose_save)
     
     forward_kinematic = FK(joint_values,joint_poses,a_cuboid_pos,a_cuboid_orient)
-    print(get_artag_pos_in_world(forward_kinematic, target_joints[0]))
+    # print(get_artag_pos_in_world(forward_kinematic, target_joints[0]))
 
     rospy.init_node('command_joints_example', anonymous=True)
     pub = rospy.Publisher(ROSTOPIC_SET_ARM_JOINT,
@@ -153,7 +157,7 @@ def main():
     sub_img = rospy.Subscriber("/camera/color/image_raw", Image, img_callback)
 
     # extrinsic = np.load("extrinsic.npy")
-    extrinsic = np.load("extrinsic_1.npy") 
+    extrinsic = np.load("extrinsic_2.npy") 
     M = intrinsic_matrix.dot(extrinsic)
 
     rospy.sleep(2)
@@ -164,23 +168,30 @@ def main():
     rospy.sleep(5)
     
 
-    for joint in target_joints:
-        raw_input("Robot ready to move to START POSITION. Press Enter to continue.")
+    for i in range(len(target_joints)):
+        joint = target_joints[i]
+        set_arm_joint(pub, joint)
+        print(joint)
+        rospy.sleep(5)
+        # raw_input("Robot ready to move to START POSITION. Press Enter to continue.")
         if len(pos)>0:
             threed_pose = get_artag_pos_in_world(forward_kinematic,joint)
+            # threed_pose = np.array(ar_pose_save[i][0])
+            print(threed_pose)
             threed_pose = np.insert(threed_pose,3,1,axis=0)
             pos_calculate = extrinsic.dot(threed_pose)
             print("pos_calculate",pos_calculate)
             print("pos",pos)
+            print("error",pos_calculate-pos)
             # pos_2d = M.dot(threed_pose)
             pos_2d = intrinsic_matrix.dot(pos_calculate.transpose())
+            # pos_2d = intrinsic_matrix.dot(np.array(pos).transpose())
             print(pos_2d[0]/pos_2d[2])
-            pos_3d_world.append(get_artag_pos_in_world(forward_kinematic,joint))
+            # pos_3d_world.append(get_artag_pos_in_world(forward_kinematic,joint))
+            pos_3d_world.append(threed_pose[:3])
             pos_3d_cam.append([pos[0], pos[1], pos[2]])
             print("Finished sampling. Robot start moving. Please wait.")
-        set_arm_joint(pub, joint)
-        print(joint)
-        rospy.sleep(5)
+        
 
     # convert pos_3d_cam to 2d pos in image
     
@@ -235,9 +246,8 @@ def main():
     # extrinsic[:,:3] = ir_rvec
     R3x3,J = cv2.Rodrigues(ir_rvec)
     # extrinsic = forward_kinematic.Homo_matrix(ir_rvec[0],ir_tvec[0])[:3,:]
-    R3x3 = R3x3.transpose()
-    ir_tvec = -R3x3.dot(ir_tvec)
-    print(ir_tvec)
+    # R3x3 = R3x3.transpose()
+    # ir_tvec = -R3x3.dot(ir_tvec)
     extrinsic[:,:3] = R3x3
     extrinsic[:,3] = ir_tvec.transpose()[0]
     
