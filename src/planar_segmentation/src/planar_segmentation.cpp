@@ -18,8 +18,8 @@
 #include <cv_bridge/cv_bridge.h>
 #include <opencv2/imgproc/imgproc.hpp>
 #include <opencv2/highgui/highgui.hpp>
-float P [12] = {-0.14273474, -0.98966773, -0.01358608,  0.0585618 ,-0.10300689,  0.02850545, -0.99427211,  0.51491767, 0.98438629, -0.14051771, -0.10601131,  0.24758666}; 
-
+// float P [12] = {-0.14273474, -0.98966773, -0.01358608,  0.0585618 ,-0.10300689,  0.02850545, -0.99427211,  0.51491767, 0.98438629, -0.14051771, -0.10601131,  0.24758666}; 
+float P [12] = {614.357421875,  0.0,  310.2319641113281, 0.0, 0.0,   614.494140625,  244.32691955566406, 0.0, 0.0,   0.0,  1.0, 0.0};
 
 void drawBoundingBox(pcl::PointCloud<pcl::PointXYZ>::Ptr& plane0, pcl::PointCloud<pcl::PointXYZ>::Ptr& plane1, pcl::PointCloud<pcl::PointXYZ>::Ptr& plane2)
 { 
