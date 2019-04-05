@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /home/yunfei/Projects/robotAutonomy/CameraCalibration/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: install/local
-
-.PHONY : install/local/fast
-
 # Special rule for the target list_install_components
 list_install_components:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
@@ -88,6 +77,17 @@ install/strip/fast: install/strip
 
 .PHONY : install/strip/fast
 
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: install/local
+
+.PHONY : install/local/fast
+
 # Special rule for the target test
 test:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
@@ -98,18 +98,6 @@ test:
 test/fast: test
 
 .PHONY : test/fast
-
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
 
 # Special rule for the target edit_cache
 edit_cache:
@@ -132,6 +120,18 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -196,141 +196,6 @@ velocity_control/fast:
 .PHONY : velocity_control/fast
 
 # Convenience name for target.
-cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/position_control.dir/rule:
-	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(MAKE) -f CMakeFiles/Makefile2 cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/position_control.dir/rule
-.PHONY : cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/position_control.dir/rule
-
-# Convenience name for target.
-position_control: cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/position_control.dir/rule
-
-.PHONY : position_control
-
-# fast build rule for target.
-position_control/fast:
-	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/position_control.dir/build.make cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/position_control.dir/build
-.PHONY : position_control/fast
-
-# Convenience name for target.
-cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(MAKE) -f CMakeFiles/Makefile2 cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
-.PHONY : cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-sensor_msgs_generate_messages_nodejs: cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
-
-.PHONY : sensor_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-sensor_msgs_generate_messages_nodejs/fast:
-	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build
-.PHONY : sensor_msgs_generate_messages_nodejs/fast
-
-# Convenience name for target.
-cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule:
-	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(MAKE) -f CMakeFiles/Makefile2 cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
-.PHONY : cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-sensor_msgs_generate_messages_eus: cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
-
-.PHONY : sensor_msgs_generate_messages_eus
-
-# fast build rule for target.
-sensor_msgs_generate_messages_eus/fast:
-	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build
-.PHONY : sensor_msgs_generate_messages_eus/fast
-
-# Convenience name for target.
-cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule:
-	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(MAKE) -f CMakeFiles/Makefile2 cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
-.PHONY : cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-sensor_msgs_generate_messages_py: cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
-
-.PHONY : sensor_msgs_generate_messages_py
-
-# fast build rule for target.
-sensor_msgs_generate_messages_py/fast:
-	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
-.PHONY : sensor_msgs_generate_messages_py/fast
-
-# Convenience name for target.
-cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule:
-	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(MAKE) -f CMakeFiles/Makefile2 cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
-.PHONY : cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-sensor_msgs_generate_messages_lisp: cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
-
-.PHONY : sensor_msgs_generate_messages_lisp
-
-# fast build rule for target.
-sensor_msgs_generate_messages_lisp/fast:
-	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
-.PHONY : sensor_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule:
-	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(MAKE) -f CMakeFiles/Makefile2 cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
-.PHONY : cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-sensor_msgs_generate_messages_cpp: cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
-
-.PHONY : sensor_msgs_generate_messages_cpp
-
-# fast build rule for target.
-sensor_msgs_generate_messages_cpp/fast:
-	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
-.PHONY : sensor_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule:
-	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(MAKE) -f CMakeFiles/Makefile2 cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
-.PHONY : cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-geometry_msgs_generate_messages_py: cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
-
-.PHONY : geometry_msgs_generate_messages_py
-
-# fast build rule for target.
-geometry_msgs_generate_messages_py/fast:
-	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
-.PHONY : geometry_msgs_generate_messages_py/fast
-
-# Convenience name for target.
-cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule:
-	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(MAKE) -f CMakeFiles/Makefile2 cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
-.PHONY : cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-geometry_msgs_generate_messages_cpp: cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
-
-.PHONY : geometry_msgs_generate_messages_cpp
-
-# fast build rule for target.
-geometry_msgs_generate_messages_cpp/fast:
-	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
-.PHONY : geometry_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule:
-	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(MAKE) -f CMakeFiles/Makefile2 cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
-.PHONY : cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-geometry_msgs_generate_messages_eus: cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
-
-.PHONY : geometry_msgs_generate_messages_eus
-
-# fast build rule for target.
-geometry_msgs_generate_messages_eus/fast:
-	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build
-.PHONY : geometry_msgs_generate_messages_eus/fast
-
-# Convenience name for target.
 cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/torque_control.dir/rule:
 	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(MAKE) -f CMakeFiles/Makefile2 cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/torque_control.dir/rule
 .PHONY : cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/torque_control.dir/rule
@@ -346,34 +211,19 @@ torque_control/fast:
 .PHONY : torque_control/fast
 
 # Convenience name for target.
-cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule:
-	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(MAKE) -f CMakeFiles/Makefile2 cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
-.PHONY : cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
+cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/position_control.dir/rule:
+	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(MAKE) -f CMakeFiles/Makefile2 cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/position_control.dir/rule
+.PHONY : cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/position_control.dir/rule
 
 # Convenience name for target.
-geometry_msgs_generate_messages_lisp: cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
+position_control: cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/position_control.dir/rule
 
-.PHONY : geometry_msgs_generate_messages_lisp
+.PHONY : position_control
 
 # fast build rule for target.
-geometry_msgs_generate_messages_lisp/fast:
-	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
-.PHONY : geometry_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(MAKE) -f CMakeFiles/Makefile2 cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
-.PHONY : cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-geometry_msgs_generate_messages_nodejs: cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
-
-.PHONY : geometry_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-geometry_msgs_generate_messages_nodejs/fast:
-	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build
-.PHONY : geometry_msgs_generate_messages_nodejs/fast
+position_control/fast:
+	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/position_control.dir/build.make cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/position_control.dir/build
+.PHONY : position_control/fast
 
 src/multi_port.o: src/multi_port.cpp.o
 
@@ -489,27 +339,17 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... install/local"
+	@echo "... multi_port"
 	@echo "... list_install_components"
 	@echo "... install/strip"
-	@echo "... multi_port"
-	@echo "... test"
+	@echo "... install/local"
 	@echo "... velocity_control"
-	@echo "... install"
-	@echo "... position_control"
+	@echo "... test"
 	@echo "... edit_cache"
-	@echo "... sensor_msgs_generate_messages_nodejs"
-	@echo "... sensor_msgs_generate_messages_eus"
-	@echo "... sensor_msgs_generate_messages_py"
-	@echo "... sensor_msgs_generate_messages_lisp"
-	@echo "... sensor_msgs_generate_messages_cpp"
-	@echo "... geometry_msgs_generate_messages_py"
-	@echo "... geometry_msgs_generate_messages_cpp"
-	@echo "... geometry_msgs_generate_messages_eus"
-	@echo "... rebuild_cache"
 	@echo "... torque_control"
-	@echo "... geometry_msgs_generate_messages_lisp"
-	@echo "... geometry_msgs_generate_messages_nodejs"
+	@echo "... rebuild_cache"
+	@echo "... position_control"
+	@echo "... install"
 	@echo "... src/multi_port.o"
 	@echo "... src/multi_port.i"
 	@echo "... src/multi_port.s"

@@ -11,8 +11,10 @@ find_package(catkin REQUIRED COMPONENTS
   roscpp
   rospy
   std_msgs
+  cv_bridge
 )
 find_package(PCL 1.2 REQUIRED)
+find_package( OpenCV REQUIRED )
 
 ## System dependencies are found with CMake's conventions
 # find_package(Boost REQUIRED COMPONENTS system)
@@ -119,8 +121,9 @@ catkin_package(
 include_directories(
 # include
   ${catkin_INCLUDE_DIRS}
-  ${PCL_INCLUDE_DIRS}
+  ${PCL_INCLUDE_DIRS} 
 )
+include_directories(SYSTEM ${OpenCV_INCLUDE_DIRS})
 link_directories(${PCL_LIBRARY_DIRS})
 add_definitions(${PCL_DEFINITIONS})
 ## Declare a C++ library
@@ -156,9 +159,7 @@ add_executable (planar_segmentation_node src/planar_segmentation.cpp)
 # )
 
 
-target_link_libraries (planar_segmentation_node ${PCL_LIBRARIES})
-
-
+target_link_libraries (planar_segmentation_node ${PCL_LIBRARIES} ${OpenCV_LIBRARIES})
 #############
 ## Install ##
 #############
