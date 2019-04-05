@@ -132,6 +132,13 @@ pcl::PointCloud<pcl::PointXYZ>::Ptr extract_plane(pcl::PointCloud<pcl::PointXYZ>
     return plane;
 }
 
+void view_pcl(pcl::PointCloud<pcl::PointXYZ>::Ptr &cloud)
+{
+  pcl::visualization::CloudViewer viewer ("Simple Cloud Viewer");
+  viewer.showCloud (cloud);
+  while (!viewer.wasStopped ()) {}
+}
+
 int main (int argc, char** argv)
 {
   
@@ -176,10 +183,6 @@ int main (int argc, char** argv)
 
   std::cerr << "Bounding Box Point cloud data: " << bb_cloud->points.size () << " points" << std::endl;
 
-  // pcl::visualization::CloudViewer viewer1 ("Simple Cloud Viewer");
-  // viewer1.showCloud (bb_cloud);
-  // while (!viewer1.wasStopped ()) {}
-
   pcl::ModelCoefficients::Ptr coefficients (new pcl::ModelCoefficients);
   pcl::PointIndices::Ptr inliers (new pcl::PointIndices);
   // Create the segmentation object
@@ -193,28 +196,24 @@ int main (int argc, char** argv)
 
   //extract table
   pcl::PointCloud<pcl::PointXYZ>::Ptr table_cloud = extract_plane( bb_cloud, seg, coefficients);
-  // pcl::visualization::CloudViewer viewer_plane ("Simple Cloud Viewer");
-  // viewer_plane.showCloud (table_cloud);
-  // while (!viewer_plane.wasStopped ()) {}
+  view_pcl(table_cloud);
 
   //extract plane 0
   pcl::PointCloud<pcl::PointXYZ>::Ptr plane0_cloud = extract_plane( bb_cloud, seg, coefficients);
-  // pcl::visualization::CloudViewer viewer_plane0 ("Simple Cloud Viewer");
-  // viewer_plane0.showCloud (plane0_cloud);
-  // while (!viewer_plane0.wasStopped ()) {}
+  view_pcl(plane0_cloud);
 
   //extract plane 1
   pcl::PointCloud<pcl::PointXYZ>::Ptr plane1_cloud = extract_plane( bb_cloud, seg, coefficients);
-  // pcl::visualization::CloudViewer viewer_plane1 ("Simple Cloud Viewer");
-  // viewer_plane1.showCloud (plane1_cloud);
-  // while (!viewer_plane1.wasStopped ()) {}
+  view_pcl(plane1_cloud);
 
   //extract plane 2
   pcl::PointCloud<pcl::PointXYZ>::Ptr plane2_cloud = extract_plane( bb_cloud, seg, coefficients);
-  // pcl::visualization::CloudViewer viewer_plane2 ("Simple Cloud Viewer");
-  // viewer_plane2.showCloud (plane2_cloud);
-  // while (!viewer_plane2.wasStopped ()) {}
+  view_pcl(plane2_cloud);
+
   drawBoundingBox(plane0_cloud,plane1_cloud,plane2_cloud);
+
+
+
 
 
   return (0);
