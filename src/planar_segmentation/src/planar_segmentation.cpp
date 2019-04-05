@@ -30,37 +30,21 @@ float P [12] = {614.357421875,  0.0,  310.2319641113281, 0.0, 0.0,   614.4941406
 
 void drawBoundingBox(pcl::PointCloud<pcl::PointXYZ>::Ptr& plane0, pcl::PointCloud<pcl::PointXYZ>::Ptr& plane1, pcl::PointCloud<pcl::PointXYZ>::Ptr& plane2)
 { 
+    cv::Mat image;
+    image = cv::imread("../Data/000_Color.png", CV_LOAD_IMAGE_COLOR);   // Read the file
+
+    if(! image.data )                              // Check for invalid input
+    {
+        std::cout <<  "Could not open or find the image" << std::endl ;
+        return;
+    }
+
+    cv::namedWindow( "Display window", cv::WINDOW_AUTOSIZE );// Create a window for display.
     std::vector<float> x_arr;
     std::vector<float> y_arr;
     float u;
     float v;
     float w;
-   
-    for (int i = 0; i < plane0->points.size(); i++){
-        u = plane0->points[i].x*P[0]+plane0->points[i].y*P[1]+plane0->points[i].z*P[2]+P[3];
-        v = plane0->points[i].x*P[4]+plane0->points[i].y*P[5]+plane0->points[i].z*P[6]+P[7];
-        w = plane0->points[i].x*P[8]+plane0->points[i].y*P[9]+plane0->points[i].z*P[10]+P[11];
-        x_arr.push_back(u/w);
-        y_arr.push_back(v/w);
-        std::cout<<u/w<<" "<<v/w<<std::endl;
-    }
-    for (int i = 0; i < plane1->points.size(); i++){
-        u = plane1->points[i].x*P[0]+plane1->points[i].y*P[1]+plane1->points[i].z*P[2]+P[3];
-        v = plane1->points[i].x*P[4]+plane1->points[i].y*P[5]+plane1->points[i].z*P[6]+P[7];
-        w = plane1->points[i].x*P[8]+plane1->points[i].y*P[9]+plane1->points[i].z*P[10]+P[11];
-        x_arr.push_back(u/w);
-        y_arr.push_back(v/w);
-        std::cout<<u/w<<" "<<v/w<<std::endl;
-    }
-    for (int i = 0; i < plane2->points.size(); i++){
-        u = plane2->points[i].x*P[0]+plane2->points[i].y*P[1]+plane2->points[i].z*P[2]+P[3];
-        v = plane2->points[i].x*P[4]+plane2->points[i].y*P[5]+plane2->points[i].z*P[6]+P[7];
-        w = plane2->points[i].x*P[8]+plane2->points[i].y*P[9]+plane2->points[i].z*P[10]+P[11];
-        x_arr.push_back(u/w);
-        y_arr.push_back(v/w);
-        std::cout<<u/w<<" "<<v/w<<std::endl;
-    }
-
 
     cv::Mat image;
     image = cv::imread(img_path, CV_LOAD_IMAGE_COLOR);   // Read the file
@@ -70,13 +54,35 @@ void drawBoundingBox(pcl::PointCloud<pcl::PointXYZ>::Ptr& plane0, pcl::PointClou
         std::cout <<  "Could not open or find the image" << std::endl ;
         return;
     }
+   
+    for (int i = 0; i < plane0->points.size(); i++){
+        // u = plane0->points[i].x*P[0]+plane0->points[i].y*P[1]+plane0->points[i].z*P[2]+P[3];
+        // v = plane0->points[i].x*P[4]+plane0->points[i].y*P[5]+plane0->points[i].z*P[6]+P[7];
+        // w = plane0->points[i].x*P[8]+plane0->points[i].y*P[9]+plane0->points[i].z*P[10]+P[11];
+        u = plane0->points[i].x*P[0]+plane0->points[i].y*P[1]+plane0->points[i].z*P[2]+P[3];
+        v = plane0->points[i].x*P[4]+plane0->points[i].y*P[5]+plane0->points[i].z*P[6]+P[7];
+        w = plane0->points[i].x*P[8]+plane0->points[i].y*P[9]+plane0->points[i].z*P[10]+P[11];
+        cv::circle(image, cv::Point(image.cols - u/w, v/w), 1, CV_RGB(255,0,0),-1);
+        // x_arr.push_back(u/w);
+        // y_arr.push_back(v/w);
+        // std::cout<<u/w<<" "<<v/w<<std::endl;
+        // image.cols -
+    }
+    
+    for (int i = 0; i < plane1->points.size(); i++){
+        u = plane1->points[i].x*P[0]+plane1->points[i].y*P[1]+plane1->points[i].z*P[2]+P[3];
+        v = plane1->points[i].x*P[4]+plane1->points[i].y*P[5]+plane1->points[i].z*P[6]+P[7];
+        w = plane1->points[i].x*P[8]+plane1->points[i].y*P[9]+plane1->points[i].z*P[10]+P[11];
+        cv::circle(image, cv::Point(image.cols - u/w, v/w), 1, CV_RGB(0,255,0),-1);
+    }
+    for (int i = 0; i < plane2->points.size(); i++){
+        u = plane2->points[i].x*P[0]+plane2->points[i].y*P[1]+plane2->points[i].z*P[2]+P[3];
+        v = plane2->points[i].x*P[4]+plane2->points[i].y*P[5]+plane2->points[i].z*P[6]+P[7];
+        w = plane2->points[i].x*P[8]+plane2->points[i].y*P[9]+plane2->points[i].z*P[10]+P[11];
+        cv::circle(image, cv::Point(image.cols - u/w, v/w), 1, CV_RGB(0,0,255),-1);
+    }
 
-    cv::namedWindow( "Display window", cv::WINDOW_AUTOSIZE );// Create a window for display.
-    for(std::vector<float>::size_type i=0; i < x_arr.size(); i++){
-      // x_loc=x_arr[i];
-      // y_loc=y_arr[i];
-      cv::circle(image, cv::Point(x_arr[i],y_arr[i]), 5, CV_RGB(0,255,0),-1);
-      }
+
     cv::imshow( "Display window", image );                   // Show our image inside it.
 
     cv::waitKey(0);  
@@ -203,7 +209,7 @@ int main (int argc, char** argv)
 
   //extract table
   pcl::PointCloud<pcl::PointXYZ>::Ptr table_cloud = extract_plane( bb_cloud, seg, coefficients);
-  view_pcl(table_cloud);
+  // view_pcl(table_cloud);
 
   //extract plane 0
   pcl::PointCloud<pcl::PointXYZ>::Ptr plane0_cloud = extract_plane( bb_cloud, seg, coefficients);
