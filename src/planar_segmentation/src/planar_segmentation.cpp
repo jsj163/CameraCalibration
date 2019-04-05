@@ -21,9 +21,11 @@
 
 #include <ros/package.h>
 
-std::string path = ros::package::getPath("planar_segmentation");
+// std::string path = ros::package::getPath("planar_segmentation");
+std::string path = "..";
 std::string img_path = path+"/Data/000_Color.png";
 std::string pcl_path = path+"/Data/000.pcd";
+// std::string path = std::filesystem::current_path();
 
 // float P [12] = {-0.14273474, -0.98966773, -0.01358608,  0.0585618 ,-0.10300689,  0.02850545, -0.99427211,  0.51491767, 0.98438629, -0.14051771, -0.10601131,  0.24758666}; 
 float P [12] = {614.357421875,  0.0,  310.2319641113281, 0.0, 0.0,   614.494140625,  244.32691955566406, 0.0, 0.0,   0.0,  1.0, 0.0};
@@ -31,7 +33,7 @@ float P [12] = {614.357421875,  0.0,  310.2319641113281, 0.0, 0.0,   614.4941406
 void drawBoundingBox(pcl::PointCloud<pcl::PointXYZ>::Ptr& plane0, pcl::PointCloud<pcl::PointXYZ>::Ptr& plane1, pcl::PointCloud<pcl::PointXYZ>::Ptr& plane2)
 { 
     cv::Mat image;
-    image = cv::imread("../Data/000_Color.png", CV_LOAD_IMAGE_COLOR);   // Read the file
+    image = cv::imread(img_path, CV_LOAD_IMAGE_COLOR);   // Read the file
 
     if(! image.data )                              // Check for invalid input
     {
@@ -46,8 +48,7 @@ void drawBoundingBox(pcl::PointCloud<pcl::PointXYZ>::Ptr& plane0, pcl::PointClou
     float v;
     float w;
 
-    cv::Mat image;
-    image = cv::imread(img_path, CV_LOAD_IMAGE_COLOR);   // Read the file
+    
 
     if(! image.data )                              // Check for invalid input
     {
@@ -56,12 +57,9 @@ void drawBoundingBox(pcl::PointCloud<pcl::PointXYZ>::Ptr& plane0, pcl::PointClou
     }
    
     for (int i = 0; i < plane0->points.size(); i++){
-        // u = plane0->points[i].x*P[0]+plane0->points[i].y*P[1]+plane0->points[i].z*P[2]+P[3];
-        // v = plane0->points[i].x*P[4]+plane0->points[i].y*P[5]+plane0->points[i].z*P[6]+P[7];
-        // w = plane0->points[i].x*P[8]+plane0->points[i].y*P[9]+plane0->points[i].z*P[10]+P[11];
-        u = plane0->points[i].x*P[0]+plane0->points[i].y*P[1]+plane0->points[i].z*P[2]+P[3];
-        v = plane0->points[i].x*P[4]+plane0->points[i].y*P[5]+plane0->points[i].z*P[6]+P[7];
-        w = plane0->points[i].x*P[8]+plane0->points[i].y*P[9]+plane0->points[i].z*P[10]+P[11];
+        u = (plane0->points[i].x+0.03)*P[0]+(plane0->points[i].y+0.053)*P[1]+(plane0->points[i].z-0.1)*P[2]+P[3];
+        v = (plane0->points[i].x+0.03)*P[4]+(plane0->points[i].y+0.053)*P[5]+(plane0->points[i].z-0.1)*P[6]+P[7];
+        w = (plane0->points[i].x+0.03)*P[8]+(plane0->points[i].y+0.053)*P[9]+(plane0->points[i].z-0.1)*P[10]+P[11];
         cv::circle(image, cv::Point(image.cols - u/w, v/w), 1, CV_RGB(255,0,0),-1);
         // x_arr.push_back(u/w);
         // y_arr.push_back(v/w);
@@ -70,15 +68,15 @@ void drawBoundingBox(pcl::PointCloud<pcl::PointXYZ>::Ptr& plane0, pcl::PointClou
     }
     
     for (int i = 0; i < plane1->points.size(); i++){
-        u = plane1->points[i].x*P[0]+plane1->points[i].y*P[1]+plane1->points[i].z*P[2]+P[3];
-        v = plane1->points[i].x*P[4]+plane1->points[i].y*P[5]+plane1->points[i].z*P[6]+P[7];
-        w = plane1->points[i].x*P[8]+plane1->points[i].y*P[9]+plane1->points[i].z*P[10]+P[11];
+        u = (plane1->points[i].x+0.03)*P[0]+(plane1->points[i].y+0.053)*P[1]+(plane1->points[i].z-0.1)*P[2]+P[3];
+        v = (plane1->points[i].x+0.03)*P[4]+(plane1->points[i].y+0.053)*P[5]+(plane1->points[i].z-0.1)*P[6]+P[7];
+        w = (plane1->points[i].x+0.03)*P[8]+(plane1->points[i].y+0.053)*P[9]+(plane1->points[i].z-0.1)*P[10]+P[11];
         cv::circle(image, cv::Point(image.cols - u/w, v/w), 1, CV_RGB(0,255,0),-1);
     }
     for (int i = 0; i < plane2->points.size(); i++){
-        u = plane2->points[i].x*P[0]+plane2->points[i].y*P[1]+plane2->points[i].z*P[2]+P[3];
-        v = plane2->points[i].x*P[4]+plane2->points[i].y*P[5]+plane2->points[i].z*P[6]+P[7];
-        w = plane2->points[i].x*P[8]+plane2->points[i].y*P[9]+plane2->points[i].z*P[10]+P[11];
+        u = (plane2->points[i].x+0.03)*P[0]+(plane2->points[i].y+0.053)*P[1]+(plane2->points[i].z-0.1)*P[2]+P[3];
+        v = (plane2->points[i].x+0.03)*P[4]+(plane2->points[i].y+0.053)*P[5]+(plane2->points[i].z-0.1)*P[6]+P[7];
+        w = (plane2->points[i].x+0.03)*P[8]+(plane2->points[i].y+0.053)*P[9]+(plane2->points[i].z-0.1)*P[10]+P[11];
         cv::circle(image, cv::Point(image.cols - u/w, v/w), 1, CV_RGB(0,0,255),-1);
     }
 

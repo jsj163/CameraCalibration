@@ -111,6 +111,7 @@ catkin_package(
  LIBRARIES planar_segmentation
  CATKIN_DEPENDS roscpp rospy std_msgs roslib
  DEPENDS system_lib
+ roslib
 )
 
 ###########

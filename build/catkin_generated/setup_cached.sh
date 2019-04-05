@@ -13,4 +13,4 @@ export PKG_CONFIG_PATH="/home/yunfei/Projects/robotAutonomy/CameraCalibration/de
 export PWD="/home/yunfei/Projects/robotAutonomy/CameraCalibration/build"
 export PYTHONPATH="/home/yunfei/Projects/robotAutonomy/CameraCalibration/devel/lib/python2.7/dist-packages:$PYTHONPATH"
 export ROSLISP_PACKAGE_DIRECTORIES="/home/yunfei/Projects/robotAutonomy/CameraCalibration/devel/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
-export ROS_PACKAGE_PATH="/home/parallels/Autonomy_ws/hw4/src:/home/yunfei/Projects/robotAutonomy/CameraCalibration/src:$ROS_PACKAGE_PATH"
+export ROS_PACKAGE_PATH="/home/yunfei/Projects/robotAutonomy/CameraCalibration/src:$ROS_PACKAGE_PATH"
