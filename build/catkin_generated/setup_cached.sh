@@ -7,4 +7,10 @@
 # new environment variables
 
 # modified environment variables
+export CMAKE_PREFIX_PATH="/home/yunfei/Projects/robotAutonomy/CameraCalibration/devel:$CMAKE_PREFIX_PATH"
+export LD_LIBRARY_PATH="/home/yunfei/Projects/robotAutonomy/CameraCalibration/devel/lib:$LD_LIBRARY_PATH"
+export PKG_CONFIG_PATH="/home/yunfei/Projects/robotAutonomy/CameraCalibration/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PWD="/home/yunfei/Projects/robotAutonomy/CameraCalibration/build"
+export PYTHONPATH="/home/yunfei/Projects/robotAutonomy/CameraCalibration/devel/lib/python2.7/dist-packages:$PYTHONPATH"
+export ROSLISP_PACKAGE_DIRECTORIES="/home/yunfei/Projects/robotAutonomy/CameraCalibration/devel/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
+export ROS_PACKAGE_PATH="/home/parallels/Autonomy_ws/hw4/src:/home/yunfei/Projects/robotAutonomy/CameraCalibration/src:$ROS_PACKAGE_PATH"

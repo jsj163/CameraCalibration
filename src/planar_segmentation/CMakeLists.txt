@@ -12,6 +12,7 @@ find_package(catkin REQUIRED COMPONENTS
   rospy
   std_msgs
   cv_bridge
+  roslib
 )
 find_package(PCL 1.2 REQUIRED)
 find_package( OpenCV REQUIRED )
@@ -106,10 +107,10 @@ find_package( OpenCV REQUIRED )
 ## CATKIN_DEPENDS: catkin_packages dependent projects also need
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
-#  INCLUDE_DIRS include
-#  LIBRARIES planar_segmentation
-#  CATKIN_DEPENDS roscpp rospy std_msgs
-#  DEPENDS system_lib
+ INCLUDE_DIRS include
+ LIBRARIES planar_segmentation
+ CATKIN_DEPENDS roscpp rospy std_msgs roslib
+ DEPENDS system_lib
 )
 
 ###########

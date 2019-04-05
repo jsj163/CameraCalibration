@@ -18,6 +18,13 @@
 #include <cv_bridge/cv_bridge.h>
 #include <opencv2/imgproc/imgproc.hpp>
 #include <opencv2/highgui/highgui.hpp>
+
+#include <ros/package.h>
+
+std::string path = ros::package::getPath("planar_segmentation");
+std::string img_path = path+"/Data/000_Color.png";
+std::string pcl_path = path+"/Data/000.pcd";
+
 // float P [12] = {-0.14273474, -0.98966773, -0.01358608,  0.0585618 ,-0.10300689,  0.02850545, -0.99427211,  0.51491767, 0.98438629, -0.14051771, -0.10601131,  0.24758666}; 
 float P [12] = {614.357421875,  0.0,  310.2319641113281, 0.0, 0.0,   614.494140625,  244.32691955566406, 0.0, 0.0,   0.0,  1.0, 0.0};
 
@@ -56,7 +63,7 @@ void drawBoundingBox(pcl::PointCloud<pcl::PointXYZ>::Ptr& plane0, pcl::PointClou
 
 
     cv::Mat image;
-    image = cv::imread("../Data/000_Color.png", CV_LOAD_IMAGE_COLOR);   // Read the file
+    image = cv::imread(img_path, CV_LOAD_IMAGE_COLOR);   // Read the file
 
     if(! image.data )                              // Check for invalid input
     {
@@ -145,7 +152,7 @@ int main (int argc, char** argv)
 
   pcl::PointCloud<pcl::PointXYZ>::Ptr cloud(new pcl::PointCloud<pcl::PointXYZ>), cloud_p (new pcl::PointCloud<pcl::PointXYZ>), cloud_f (new pcl::PointCloud<pcl::PointXYZ>);
   pcl::PCDReader Reader;
-  Reader.read("../Data/000.pcd", *cloud);
+  Reader.read(pcl_path, *cloud);
 
   std::cerr << "Point cloud data: " << cloud->points.size () << " points" << std::endl;
 
