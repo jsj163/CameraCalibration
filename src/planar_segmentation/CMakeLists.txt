@@ -161,7 +161,7 @@ add_executable (planar_segmentation_node src/planar_segmentation.cpp)
 # )
 
 
-target_link_libraries (planar_segmentation_node ${PCL_LIBRARIES} ${OpenCV_LIBRARIES})
+target_link_libraries (planar_segmentation_node ${PCL_LIBRARIES} ${OpenCV_LIBRARIES} ${catkin_LIBRARIES})
 #############
 ## Install ##
 #############

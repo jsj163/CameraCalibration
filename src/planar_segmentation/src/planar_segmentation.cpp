@@ -21,8 +21,7 @@
 
 #include <ros/package.h>
 
-// std::string path = ros::package::getPath("planar_segmentation");
-std::string path = "..";
+std::string path = ros::package::getPath("planar_segmentation");
 std::string img_path = path+"/Data/000_Color.png";
 std::string pcl_path = path+"/Data/000.pcd";
 // std::string path = std::filesystem::current_path();
@@ -80,12 +79,33 @@ void drawBoundingBox(pcl::PointCloud<pcl::PointXYZ>::Ptr& plane0, pcl::PointClou
         cv::circle(image, cv::Point(image.cols - u/w, v/w), 1, CV_RGB(0,0,255),-1);
     }
 
+    cv::line(image, cv::Point(0.0,0.0), cv::Point(30.0,30.0), CV_RGB(0,255,0), 1, 8, 0);
+    cv::line(image, cv::Point(0.0,0.0), cv::Point(30.0,30.0), CV_RGB(0,255,0), 1, 8, 0);
+
 
     cv::imshow( "Display window", image );                   // Show our image inside it.
 
     cv::waitKey(0);  
 }
 
+void drawCountour(std::vector<float> x_arr, std::vector<float> y_arr){
+  cv::Mat image;
+    image = cv::imread(img_path, CV_LOAD_IMAGE_COLOR);   // Read the file
+
+    if(! image.data )                              // Check for invalid input
+    {
+        std::cout <<  "Could not open or find the image" << std::endl ;
+        return;
+    }
+
+  cv::namedWindow( "Display window", cv::WINDOW_AUTOSIZE );// Create a window for display.
+  for (std::vector<float>::size_type i=0; i < x_arr.size(); i++){
+    if (((i+1)%4)!=0){
+      cv::line(image, cv::Point(x_arr[i], y_arr[i]), cv::Point(x_arr[i+1], y_arr[i+1]), CV_RGB(0,255,0), 1, 8, 0);
+    }
+  }
+
+}
 
 inline double distance(pcl::PointXYZ &p)
 {
