@@ -1,8 +1,8 @@
-# Install script for directory: /home/parallels/Autonomy_ws/hw4/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager
+# Install script for directory: /home/yunfei/Projects/robotAutonomy/CameraCalibration/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/parallels/Autonomy_ws/hw4/install")
+  set(CMAKE_INSTALL_PREFIX "/home/yunfei/Projects/robotAutonomy/CameraCalibration/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -33,18 +33,18 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/parallels/Autonomy_ws/hw4/build/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager/catkin_generated/installspace/dynamixel_workbench_single_manager.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/yunfei/Projects/robotAutonomy/CameraCalibration/build/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager/catkin_generated/installspace/dynamixel_workbench_single_manager.pc")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_workbench_single_manager/cmake" TYPE FILE FILES
-    "/home/parallels/Autonomy_ws/hw4/build/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager/catkin_generated/installspace/dynamixel_workbench_single_managerConfig.cmake"
-    "/home/parallels/Autonomy_ws/hw4/build/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager/catkin_generated/installspace/dynamixel_workbench_single_managerConfig-version.cmake"
+    "/home/yunfei/Projects/robotAutonomy/CameraCalibration/build/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager/catkin_generated/installspace/dynamixel_workbench_single_managerConfig.cmake"
+    "/home/yunfei/Projects/robotAutonomy/CameraCalibration/build/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager/catkin_generated/installspace/dynamixel_workbench_single_managerConfig-version.cmake"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_workbench_single_manager" TYPE FILE FILES "/home/parallels/Autonomy_ws/hw4/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_workbench_single_manager" TYPE FILE FILES "/home/yunfei/Projects/robotAutonomy/CameraCalibration/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager/package.xml")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -54,12 +54,12 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/dynamixel_workbench_single_manager/single_dynamixel_controller"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/dynamixel_workbench_single_manager" TYPE EXECUTABLE FILES "/home/parallels/Autonomy_ws/hw4/devel/lib/dynamixel_workbench_single_manager/single_dynamixel_controller")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/dynamixel_workbench_single_manager" TYPE EXECUTABLE FILES "/home/yunfei/Projects/robotAutonomy/CameraCalibration/devel/lib/dynamixel_workbench_single_manager/single_dynamixel_controller")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/dynamixel_workbench_single_manager/single_dynamixel_controller" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/dynamixel_workbench_single_manager/single_dynamixel_controller")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/dynamixel_workbench_single_manager/single_dynamixel_controller"
-         OLD_RPATH "/home/parallels/Autonomy_ws/hw4/devel/lib:/opt/ros/kinetic/lib:"
+         OLD_RPATH "/home/yunfei/Projects/robotAutonomy/CameraCalibration/devel/lib:/opt/ros/kinetic/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/dynamixel_workbench_single_manager/single_dynamixel_controller")
@@ -74,12 +74,12 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/dynamixel_workbench_single_manager/single_dynamixel_monitor"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/dynamixel_workbench_single_manager" TYPE EXECUTABLE FILES "/home/parallels/Autonomy_ws/hw4/devel/lib/dynamixel_workbench_single_manager/single_dynamixel_monitor")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/dynamixel_workbench_single_manager" TYPE EXECUTABLE FILES "/home/yunfei/Projects/robotAutonomy/CameraCalibration/devel/lib/dynamixel_workbench_single_manager/single_dynamixel_monitor")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/dynamixel_workbench_single_manager/single_dynamixel_monitor" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/dynamixel_workbench_single_manager/single_dynamixel_monitor")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/dynamixel_workbench_single_manager/single_dynamixel_monitor"
-         OLD_RPATH "/home/parallels/Autonomy_ws/hw4/devel/lib:/opt/ros/kinetic/lib:"
+         OLD_RPATH "/home/yunfei/Projects/robotAutonomy/CameraCalibration/devel/lib:/opt/ros/kinetic/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/dynamixel_workbench_single_manager/single_dynamixel_monitor")
@@ -88,10 +88,10 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/dynamixel_workbench_single_manager" TYPE DIRECTORY FILES "/home/parallels/Autonomy_ws/hw4/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager/include/dynamixel_workbench_single_manager/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/dynamixel_workbench_single_manager" TYPE DIRECTORY FILES "/home/yunfei/Projects/robotAutonomy/CameraCalibration/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager/include/dynamixel_workbench_single_manager/")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_workbench_single_manager" TYPE DIRECTORY FILES "/home/parallels/Autonomy_ws/hw4/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager/launch")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_workbench_single_manager" TYPE DIRECTORY FILES "/home/yunfei/Projects/robotAutonomy/CameraCalibration/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager/launch")
 endif()
 

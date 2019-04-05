@@ -2,7 +2,7 @@
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/parallels/Autonomy_ws/hw4/install")
+  set(CMAKE_INSTALL_PREFIX "/home/yunfei/Projects/robotAutonomy/CameraCalibration/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -34,7 +34,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/parallels/Autonomy_ws/hw4/build/gtest/gtest/cmake_install.cmake")
+  include("/home/yunfei/Projects/robotAutonomy/CameraCalibration/build/gtest/gtest/cmake_install.cmake")
 
 endif()
 

@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/parallels/Autonomy_ws/hw4/devel/include/dynamixel_workbench_msgs/WheelCommand.h
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/devel/include/dynamixel_workbench_msgs/WheelCommand.h
 ros/service_traits.h
 -
 dynamixel_workbench_msgs/WheelCommandRequest.h
@@ -14,7 +14,7 @@ dynamixel_workbench_msgs/WheelCommandRequest.h
 dynamixel_workbench_msgs/WheelCommandResponse.h
 -
 
-/home/parallels/Autonomy_ws/hw4/devel/include/dynamixel_workbench_msgs/WheelCommandRequest.h
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/devel/include/dynamixel_workbench_msgs/WheelCommandRequest.h
 string
 -
 vector
@@ -30,7 +30,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/parallels/Autonomy_ws/hw4/devel/include/dynamixel_workbench_msgs/WheelCommandResponse.h
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/devel/include/dynamixel_workbench_msgs/WheelCommandResponse.h
 string
 -
 vector
@@ -46,7 +46,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/parallels/Autonomy_ws/hw4/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_operators/src/wheel_operator.cpp
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_operators/src/wheel_operator.cpp
 fcntl.h
 -
 termios.h

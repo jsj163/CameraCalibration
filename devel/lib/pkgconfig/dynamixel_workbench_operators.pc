@@ -1,8 +1,8 @@
-prefix=/home/parallels/Autonomy_ws/hw4/devel
+prefix=/home/yunfei/Projects/robotAutonomy/CameraCalibration/devel
 
 Name: dynamixel_workbench_operators
 Description: Description of dynamixel_workbench_operators
 Version: 1.0.0
 Cflags: 
-Libs: -L/home/parallels/Autonomy_ws/hw4/devel/lib 
+Libs: -L/home/yunfei/Projects/robotAutonomy/CameraCalibration/devel/lib 
 Requires: roscpp dynamixel_workbench_msgs

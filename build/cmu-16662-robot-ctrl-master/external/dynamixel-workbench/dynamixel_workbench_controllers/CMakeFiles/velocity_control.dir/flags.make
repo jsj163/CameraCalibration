@@ -6,5 +6,5 @@ CXX_FLAGS =   -std=c++11
 
 CXX_DEFINES = -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"dynamixel_workbench_controllers\"
 
-CXX_INCLUDES = -I/home/parallels/Autonomy_ws/hw4/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/include -I/home/parallels/Autonomy_ws/hw4/devel/include -I/home/parallels/Autonomy_ws/hw4/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_toolbox/include -I/home/parallels/Autonomy_ws/hw4/src/cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/include -I/opt/ros/kinetic/include -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp 
+CXX_INCLUDES = -I/home/yunfei/Projects/robotAutonomy/CameraCalibration/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/include -I/home/yunfei/Projects/robotAutonomy/CameraCalibration/devel/include -I/home/yunfei/Projects/robotAutonomy/CameraCalibration/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_toolbox/include -I/home/yunfei/Projects/robotAutonomy/CameraCalibration/src/cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/include -I/opt/ros/kinetic/include -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp 
 

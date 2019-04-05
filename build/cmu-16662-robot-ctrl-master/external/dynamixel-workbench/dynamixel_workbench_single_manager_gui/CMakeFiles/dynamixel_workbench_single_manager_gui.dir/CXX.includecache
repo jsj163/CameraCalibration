@@ -6,27 +6,27 @@
 
 #IncludeRegexTransform: 
 
-/home/parallels/Autonomy_ws/hw4/build/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager_gui/include/dynamixel_workbench_single_manager_gui/moc_main_window.cpp
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/build/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager_gui/include/dynamixel_workbench_single_manager_gui/moc_main_window.cpp
 ../../../../../../../src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager_gui/include/dynamixel_workbench_single_manager_gui/main_window.hpp
-/home/parallels/Autonomy_ws/hw4/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager_gui/include/dynamixel_workbench_single_manager_gui/main_window.hpp
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager_gui/include/dynamixel_workbench_single_manager_gui/main_window.hpp
 QtCore/qbytearray.h
 -
 QtCore/qmetatype.h
 -
 
-/home/parallels/Autonomy_ws/hw4/build/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager_gui/include/dynamixel_workbench_single_manager_gui/moc_message_header.cpp
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/build/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager_gui/include/dynamixel_workbench_single_manager_gui/moc_message_header.cpp
 
-/home/parallels/Autonomy_ws/hw4/build/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager_gui/include/dynamixel_workbench_single_manager_gui/moc_qnode.cpp
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/build/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager_gui/include/dynamixel_workbench_single_manager_gui/moc_qnode.cpp
 ../../../../../../../src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager_gui/include/dynamixel_workbench_single_manager_gui/qnode.hpp
-/home/parallels/Autonomy_ws/hw4/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager_gui/include/dynamixel_workbench_single_manager_gui/qnode.hpp
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager_gui/include/dynamixel_workbench_single_manager_gui/qnode.hpp
 QtCore/qbytearray.h
 -
 QtCore/qmetatype.h
 -
 
-/home/parallels/Autonomy_ws/hw4/build/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager_gui/qrc_images.cpp
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/build/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager_gui/qrc_images.cpp
 
-/home/parallels/Autonomy_ws/hw4/devel/include/dynamixel_workbench_msgs/AX.h
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/devel/include/dynamixel_workbench_msgs/AX.h
 string
 -
 vector
@@ -42,7 +42,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/parallels/Autonomy_ws/hw4/devel/include/dynamixel_workbench_msgs/DynamixelCommand.h
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/devel/include/dynamixel_workbench_msgs/DynamixelCommand.h
 ros/service_traits.h
 -
 dynamixel_workbench_msgs/DynamixelCommandRequest.h
@@ -50,7 +50,7 @@ dynamixel_workbench_msgs/DynamixelCommandRequest.h
 dynamixel_workbench_msgs/DynamixelCommandResponse.h
 -
 
-/home/parallels/Autonomy_ws/hw4/devel/include/dynamixel_workbench_msgs/DynamixelCommandRequest.h
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/devel/include/dynamixel_workbench_msgs/DynamixelCommandRequest.h
 string
 -
 vector
@@ -66,7 +66,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/parallels/Autonomy_ws/hw4/devel/include/dynamixel_workbench_msgs/DynamixelCommandResponse.h
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/devel/include/dynamixel_workbench_msgs/DynamixelCommandResponse.h
 string
 -
 vector
@@ -82,7 +82,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/parallels/Autonomy_ws/hw4/devel/include/dynamixel_workbench_msgs/DynamixelInfo.h
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/devel/include/dynamixel_workbench_msgs/DynamixelInfo.h
 string
 -
 vector
@@ -100,7 +100,7 @@ ros/message_operations.h
 dynamixel_workbench_msgs/DynamixelLoadInfo.h
 -
 
-/home/parallels/Autonomy_ws/hw4/devel/include/dynamixel_workbench_msgs/DynamixelLoadInfo.h
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/devel/include/dynamixel_workbench_msgs/DynamixelLoadInfo.h
 string
 -
 vector
@@ -116,7 +116,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/parallels/Autonomy_ws/hw4/devel/include/dynamixel_workbench_msgs/EX.h
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/devel/include/dynamixel_workbench_msgs/EX.h
 string
 -
 vector
@@ -132,7 +132,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/parallels/Autonomy_ws/hw4/devel/include/dynamixel_workbench_msgs/GetDynamixelInfo.h
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/devel/include/dynamixel_workbench_msgs/GetDynamixelInfo.h
 ros/service_traits.h
 -
 dynamixel_workbench_msgs/GetDynamixelInfoRequest.h
@@ -140,7 +140,7 @@ dynamixel_workbench_msgs/GetDynamixelInfoRequest.h
 dynamixel_workbench_msgs/GetDynamixelInfoResponse.h
 -
 
-/home/parallels/Autonomy_ws/hw4/devel/include/dynamixel_workbench_msgs/GetDynamixelInfoRequest.h
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/devel/include/dynamixel_workbench_msgs/GetDynamixelInfoRequest.h
 string
 -
 vector
@@ -156,7 +156,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/parallels/Autonomy_ws/hw4/devel/include/dynamixel_workbench_msgs/GetDynamixelInfoResponse.h
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/devel/include/dynamixel_workbench_msgs/GetDynamixelInfoResponse.h
 string
 -
 vector
@@ -174,7 +174,7 @@ ros/message_operations.h
 dynamixel_workbench_msgs/DynamixelInfo.h
 -
 
-/home/parallels/Autonomy_ws/hw4/devel/include/dynamixel_workbench_msgs/MX.h
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/devel/include/dynamixel_workbench_msgs/MX.h
 string
 -
 vector
@@ -190,7 +190,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/parallels/Autonomy_ws/hw4/devel/include/dynamixel_workbench_msgs/MX2.h
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/devel/include/dynamixel_workbench_msgs/MX2.h
 string
 -
 vector
@@ -206,7 +206,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/parallels/Autonomy_ws/hw4/devel/include/dynamixel_workbench_msgs/MX2Ext.h
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/devel/include/dynamixel_workbench_msgs/MX2Ext.h
 string
 -
 vector
@@ -222,7 +222,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/parallels/Autonomy_ws/hw4/devel/include/dynamixel_workbench_msgs/MXExt.h
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/devel/include/dynamixel_workbench_msgs/MXExt.h
 string
 -
 vector
@@ -238,7 +238,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/parallels/Autonomy_ws/hw4/devel/include/dynamixel_workbench_msgs/PRO.h
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/devel/include/dynamixel_workbench_msgs/PRO.h
 string
 -
 vector
@@ -254,7 +254,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/parallels/Autonomy_ws/hw4/devel/include/dynamixel_workbench_msgs/PROExt.h
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/devel/include/dynamixel_workbench_msgs/PROExt.h
 string
 -
 vector
@@ -270,7 +270,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/parallels/Autonomy_ws/hw4/devel/include/dynamixel_workbench_msgs/RX.h
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/devel/include/dynamixel_workbench_msgs/RX.h
 string
 -
 vector
@@ -286,7 +286,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/parallels/Autonomy_ws/hw4/devel/include/dynamixel_workbench_msgs/XH.h
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/devel/include/dynamixel_workbench_msgs/XH.h
 string
 -
 vector
@@ -302,7 +302,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/parallels/Autonomy_ws/hw4/devel/include/dynamixel_workbench_msgs/XL.h
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/devel/include/dynamixel_workbench_msgs/XL.h
 string
 -
 vector
@@ -318,7 +318,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/parallels/Autonomy_ws/hw4/devel/include/dynamixel_workbench_msgs/XL320.h
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/devel/include/dynamixel_workbench_msgs/XL320.h
 string
 -
 vector
@@ -334,7 +334,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/parallels/Autonomy_ws/hw4/devel/include/dynamixel_workbench_msgs/XM.h
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/devel/include/dynamixel_workbench_msgs/XM.h
 string
 -
 vector
@@ -350,7 +350,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/parallels/Autonomy_ws/hw4/devel/include/dynamixel_workbench_msgs/XMExt.h
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/devel/include/dynamixel_workbench_msgs/XMExt.h
 string
 -
 vector
@@ -366,7 +366,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/parallels/Autonomy_ws/hw4/devel/include/dynamixel_workbench_single_manager_gui/ui_main_window.h
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/devel/include/dynamixel_workbench_single_manager_gui/ui_main_window.h
 QtCore/QLocale
 -
 QtCore/QVariant
@@ -418,61 +418,61 @@ QtWidgets/QVBoxLayout
 QtWidgets/QWidget
 -
 
-/home/parallels/Autonomy_ws/hw4/src/cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/include/dynamixel_sdk/dynamixel_sdk.h
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/src/cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/include/dynamixel_sdk/dynamixel_sdk.h
 group_bulk_read.h
-/home/parallels/Autonomy_ws/hw4/src/cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/include/dynamixel_sdk/group_bulk_read.h
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/src/cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/include/dynamixel_sdk/group_bulk_read.h
 group_bulk_write.h
-/home/parallels/Autonomy_ws/hw4/src/cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/include/dynamixel_sdk/group_bulk_write.h
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/src/cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/include/dynamixel_sdk/group_bulk_write.h
 group_sync_read.h
-/home/parallels/Autonomy_ws/hw4/src/cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/include/dynamixel_sdk/group_sync_read.h
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/src/cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/include/dynamixel_sdk/group_sync_read.h
 group_sync_write.h
-/home/parallels/Autonomy_ws/hw4/src/cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/include/dynamixel_sdk/group_sync_write.h
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/src/cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/include/dynamixel_sdk/group_sync_write.h
 packet_handler.h
-/home/parallels/Autonomy_ws/hw4/src/cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/include/dynamixel_sdk/packet_handler.h
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/src/cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/include/dynamixel_sdk/packet_handler.h
 port_handler.h
-/home/parallels/Autonomy_ws/hw4/src/cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/include/dynamixel_sdk/port_handler.h
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/src/cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/include/dynamixel_sdk/port_handler.h
 
-/home/parallels/Autonomy_ws/hw4/src/cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/include/dynamixel_sdk/group_bulk_read.h
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/src/cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/include/dynamixel_sdk/group_bulk_read.h
 map
 -
 vector
 -
 port_handler.h
-/home/parallels/Autonomy_ws/hw4/src/cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/include/dynamixel_sdk/port_handler.h
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/src/cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/include/dynamixel_sdk/port_handler.h
 packet_handler.h
-/home/parallels/Autonomy_ws/hw4/src/cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/include/dynamixel_sdk/packet_handler.h
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/src/cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/include/dynamixel_sdk/packet_handler.h
 
-/home/parallels/Autonomy_ws/hw4/src/cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/include/dynamixel_sdk/group_bulk_write.h
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/src/cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/include/dynamixel_sdk/group_bulk_write.h
 map
 -
 vector
 -
 port_handler.h
-/home/parallels/Autonomy_ws/hw4/src/cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/include/dynamixel_sdk/port_handler.h
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/src/cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/include/dynamixel_sdk/port_handler.h
 packet_handler.h
-/home/parallels/Autonomy_ws/hw4/src/cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/include/dynamixel_sdk/packet_handler.h
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/src/cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/include/dynamixel_sdk/packet_handler.h
 
-/home/parallels/Autonomy_ws/hw4/src/cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/include/dynamixel_sdk/group_sync_read.h
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/src/cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/include/dynamixel_sdk/group_sync_read.h
 map
 -
 vector
 -
 port_handler.h
-/home/parallels/Autonomy_ws/hw4/src/cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/include/dynamixel_sdk/port_handler.h
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/src/cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/include/dynamixel_sdk/port_handler.h
 packet_handler.h
-/home/parallels/Autonomy_ws/hw4/src/cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/include/dynamixel_sdk/packet_handler.h
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/src/cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/include/dynamixel_sdk/packet_handler.h
 
-/home/parallels/Autonomy_ws/hw4/src/cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/include/dynamixel_sdk/group_sync_write.h
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/src/cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/include/dynamixel_sdk/group_sync_write.h
 map
 -
 vector
 -
 port_handler.h
-/home/parallels/Autonomy_ws/hw4/src/cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/include/dynamixel_sdk/port_handler.h
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/src/cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/include/dynamixel_sdk/port_handler.h
 packet_handler.h
-/home/parallels/Autonomy_ws/hw4/src/cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/include/dynamixel_sdk/packet_handler.h
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/src/cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/include/dynamixel_sdk/packet_handler.h
 
-/home/parallels/Autonomy_ws/hw4/src/cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/include/dynamixel_sdk/packet_handler.h
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/src/cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/include/dynamixel_sdk/packet_handler.h
 Arduino.h
 -
 stdio.h
@@ -480,57 +480,57 @@ stdio.h
 vector
 -
 port_handler.h
-/home/parallels/Autonomy_ws/hw4/src/cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/include/dynamixel_sdk/port_handler.h
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/src/cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/include/dynamixel_sdk/port_handler.h
 
-/home/parallels/Autonomy_ws/hw4/src/cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/include/dynamixel_sdk/port_handler.h
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/src/cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/include/dynamixel_sdk/port_handler.h
 stdint.h
 -
 
-/home/parallels/Autonomy_ws/hw4/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager_gui/include/dynamixel_workbench_single_manager_gui/main_window.hpp
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager_gui/include/dynamixel_workbench_single_manager_gui/main_window.hpp
 QMainWindow
 -
 QTimer
 -
 ui_main_window.h
-/home/parallels/Autonomy_ws/hw4/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager_gui/include/dynamixel_workbench_single_manager_gui/ui_main_window.h
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager_gui/include/dynamixel_workbench_single_manager_gui/ui_main_window.h
 qnode.hpp
-/home/parallels/Autonomy_ws/hw4/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager_gui/include/dynamixel_workbench_single_manager_gui/qnode.hpp
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager_gui/include/dynamixel_workbench_single_manager_gui/qnode.hpp
 dynamixel_workbench_msgs/DynamixelCommand.h
-/home/parallels/Autonomy_ws/hw4/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager_gui/include/dynamixel_workbench_single_manager_gui/dynamixel_workbench_msgs/DynamixelCommand.h
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager_gui/include/dynamixel_workbench_single_manager_gui/dynamixel_workbench_msgs/DynamixelCommand.h
 dynamixel_workbench_toolbox/dynamixel_driver.h
-/home/parallels/Autonomy_ws/hw4/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager_gui/include/dynamixel_workbench_single_manager_gui/dynamixel_workbench_toolbox/dynamixel_driver.h
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager_gui/include/dynamixel_workbench_single_manager_gui/dynamixel_workbench_toolbox/dynamixel_driver.h
 
-/home/parallels/Autonomy_ws/hw4/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager_gui/include/dynamixel_workbench_single_manager_gui/message_header.h
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager_gui/include/dynamixel_workbench_single_manager_gui/message_header.h
 dynamixel_workbench_msgs/AX.h
-/home/parallels/Autonomy_ws/hw4/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager_gui/include/dynamixel_workbench_single_manager_gui/dynamixel_workbench_msgs/AX.h
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager_gui/include/dynamixel_workbench_single_manager_gui/dynamixel_workbench_msgs/AX.h
 dynamixel_workbench_msgs/RX.h
-/home/parallels/Autonomy_ws/hw4/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager_gui/include/dynamixel_workbench_single_manager_gui/dynamixel_workbench_msgs/RX.h
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager_gui/include/dynamixel_workbench_single_manager_gui/dynamixel_workbench_msgs/RX.h
 dynamixel_workbench_msgs/MX.h
-/home/parallels/Autonomy_ws/hw4/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager_gui/include/dynamixel_workbench_single_manager_gui/dynamixel_workbench_msgs/MX.h
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager_gui/include/dynamixel_workbench_single_manager_gui/dynamixel_workbench_msgs/MX.h
 dynamixel_workbench_msgs/MXExt.h
-/home/parallels/Autonomy_ws/hw4/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager_gui/include/dynamixel_workbench_single_manager_gui/dynamixel_workbench_msgs/MXExt.h
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager_gui/include/dynamixel_workbench_single_manager_gui/dynamixel_workbench_msgs/MXExt.h
 dynamixel_workbench_msgs/MX2.h
-/home/parallels/Autonomy_ws/hw4/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager_gui/include/dynamixel_workbench_single_manager_gui/dynamixel_workbench_msgs/MX2.h
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager_gui/include/dynamixel_workbench_single_manager_gui/dynamixel_workbench_msgs/MX2.h
 dynamixel_workbench_msgs/MX2Ext.h
-/home/parallels/Autonomy_ws/hw4/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager_gui/include/dynamixel_workbench_single_manager_gui/dynamixel_workbench_msgs/MX2Ext.h
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager_gui/include/dynamixel_workbench_single_manager_gui/dynamixel_workbench_msgs/MX2Ext.h
 dynamixel_workbench_msgs/EX.h
-/home/parallels/Autonomy_ws/hw4/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager_gui/include/dynamixel_workbench_single_manager_gui/dynamixel_workbench_msgs/EX.h
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager_gui/include/dynamixel_workbench_single_manager_gui/dynamixel_workbench_msgs/EX.h
 dynamixel_workbench_msgs/XL320.h
-/home/parallels/Autonomy_ws/hw4/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager_gui/include/dynamixel_workbench_single_manager_gui/dynamixel_workbench_msgs/XL320.h
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager_gui/include/dynamixel_workbench_single_manager_gui/dynamixel_workbench_msgs/XL320.h
 dynamixel_workbench_msgs/XL.h
-/home/parallels/Autonomy_ws/hw4/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager_gui/include/dynamixel_workbench_single_manager_gui/dynamixel_workbench_msgs/XL.h
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager_gui/include/dynamixel_workbench_single_manager_gui/dynamixel_workbench_msgs/XL.h
 dynamixel_workbench_msgs/XM.h
-/home/parallels/Autonomy_ws/hw4/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager_gui/include/dynamixel_workbench_single_manager_gui/dynamixel_workbench_msgs/XM.h
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager_gui/include/dynamixel_workbench_single_manager_gui/dynamixel_workbench_msgs/XM.h
 dynamixel_workbench_msgs/XMExt.h
-/home/parallels/Autonomy_ws/hw4/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager_gui/include/dynamixel_workbench_single_manager_gui/dynamixel_workbench_msgs/XMExt.h
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager_gui/include/dynamixel_workbench_single_manager_gui/dynamixel_workbench_msgs/XMExt.h
 dynamixel_workbench_msgs/XH.h
-/home/parallels/Autonomy_ws/hw4/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager_gui/include/dynamixel_workbench_single_manager_gui/dynamixel_workbench_msgs/XH.h
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager_gui/include/dynamixel_workbench_single_manager_gui/dynamixel_workbench_msgs/XH.h
 dynamixel_workbench_msgs/PRO.h
-/home/parallels/Autonomy_ws/hw4/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager_gui/include/dynamixel_workbench_single_manager_gui/dynamixel_workbench_msgs/PRO.h
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager_gui/include/dynamixel_workbench_single_manager_gui/dynamixel_workbench_msgs/PRO.h
 dynamixel_workbench_msgs/PROExt.h
-/home/parallels/Autonomy_ws/hw4/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager_gui/include/dynamixel_workbench_single_manager_gui/dynamixel_workbench_msgs/PROExt.h
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager_gui/include/dynamixel_workbench_single_manager_gui/dynamixel_workbench_msgs/PROExt.h
 
-/home/parallels/Autonomy_ws/hw4/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager_gui/include/dynamixel_workbench_single_manager_gui/qnode.hpp
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager_gui/include/dynamixel_workbench_single_manager_gui/qnode.hpp
 ros/ros.h
 -
 string
@@ -542,29 +542,29 @@ QStringListModel
 pthread.h
 -
 message_header.h
-/home/parallels/Autonomy_ws/hw4/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager_gui/include/dynamixel_workbench_single_manager_gui/message_header.h
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager_gui/include/dynamixel_workbench_single_manager_gui/message_header.h
 dynamixel_workbench_msgs/DynamixelCommand.h
-/home/parallels/Autonomy_ws/hw4/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager_gui/include/dynamixel_workbench_single_manager_gui/dynamixel_workbench_msgs/DynamixelCommand.h
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager_gui/include/dynamixel_workbench_single_manager_gui/dynamixel_workbench_msgs/DynamixelCommand.h
 dynamixel_workbench_msgs/GetDynamixelInfo.h
-/home/parallels/Autonomy_ws/hw4/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager_gui/include/dynamixel_workbench_single_manager_gui/dynamixel_workbench_msgs/GetDynamixelInfo.h
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager_gui/include/dynamixel_workbench_single_manager_gui/dynamixel_workbench_msgs/GetDynamixelInfo.h
 dynamixel_workbench_msgs/DynamixelInfo.h
-/home/parallels/Autonomy_ws/hw4/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager_gui/include/dynamixel_workbench_single_manager_gui/dynamixel_workbench_msgs/DynamixelInfo.h
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager_gui/include/dynamixel_workbench_single_manager_gui/dynamixel_workbench_msgs/DynamixelInfo.h
 
-/home/parallels/Autonomy_ws/hw4/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager_gui/src/main.cpp
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager_gui/src/main.cpp
 QApplication
 -
 ../include/dynamixel_workbench_single_manager_gui/main_window.hpp
-/home/parallels/Autonomy_ws/hw4/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager_gui/include/dynamixel_workbench_single_manager_gui/main_window.hpp
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager_gui/include/dynamixel_workbench_single_manager_gui/main_window.hpp
 
-/home/parallels/Autonomy_ws/hw4/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager_gui/src/main_window.cpp
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager_gui/src/main_window.cpp
 QMessageBox
 -
 iostream
 -
 ../include/dynamixel_workbench_single_manager_gui/main_window.hpp
-/home/parallels/Autonomy_ws/hw4/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager_gui/include/dynamixel_workbench_single_manager_gui/main_window.hpp
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager_gui/include/dynamixel_workbench_single_manager_gui/main_window.hpp
 
-/home/parallels/Autonomy_ws/hw4/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager_gui/src/qnode.cpp
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager_gui/src/qnode.cpp
 ros/ros.h
 -
 ros/network.h
@@ -576,35 +576,35 @@ sstream
 std_msgs/String.h
 -
 ../include/dynamixel_workbench_single_manager_gui/qnode.hpp
-/home/parallels/Autonomy_ws/hw4/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager_gui/include/dynamixel_workbench_single_manager_gui/qnode.hpp
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager_gui/include/dynamixel_workbench_single_manager_gui/qnode.hpp
 
-/home/parallels/Autonomy_ws/hw4/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_toolbox/include/dynamixel_workbench_toolbox/control_table_item.h
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_toolbox/include/dynamixel_workbench_toolbox/control_table_item.h
 stdint.h
 -
 
-/home/parallels/Autonomy_ws/hw4/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_toolbox/include/dynamixel_workbench_toolbox/dynamixel_driver.h
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_toolbox/include/dynamixel_workbench_toolbox/dynamixel_driver.h
 dynamixel_tool.h
-/home/parallels/Autonomy_ws/hw4/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_toolbox/include/dynamixel_workbench_toolbox/dynamixel_tool.h
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_toolbox/include/dynamixel_workbench_toolbox/dynamixel_tool.h
 Arduino.h
 -
 DynamixelSDK.h
 -
 stdio.h
-/home/parallels/Autonomy_ws/hw4/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_toolbox/include/dynamixel_workbench_toolbox/stdio.h
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_toolbox/include/dynamixel_workbench_toolbox/stdio.h
 unistd.h
-/home/parallels/Autonomy_ws/hw4/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_toolbox/include/dynamixel_workbench_toolbox/unistd.h
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_toolbox/include/dynamixel_workbench_toolbox/unistd.h
 dynamixel_sdk/dynamixel_sdk.h
-/home/parallels/Autonomy_ws/hw4/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_toolbox/include/dynamixel_workbench_toolbox/dynamixel_sdk/dynamixel_sdk.h
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_toolbox/include/dynamixel_workbench_toolbox/dynamixel_sdk/dynamixel_sdk.h
 
-/home/parallels/Autonomy_ws/hw4/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_toolbox/include/dynamixel_workbench_toolbox/dynamixel_item.h
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_toolbox/include/dynamixel_workbench_toolbox/dynamixel_item.h
 control_table_item.h
-/home/parallels/Autonomy_ws/hw4/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_toolbox/include/dynamixel_workbench_toolbox/control_table_item.h
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_toolbox/include/dynamixel_workbench_toolbox/control_table_item.h
 
-/home/parallels/Autonomy_ws/hw4/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_toolbox/include/dynamixel_workbench_toolbox/dynamixel_tool.h
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_toolbox/include/dynamixel_workbench_toolbox/dynamixel_tool.h
 string.h
 -
 dynamixel_item.h
-/home/parallels/Autonomy_ws/hw4/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_toolbox/include/dynamixel_workbench_toolbox/dynamixel_item.h
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_toolbox/include/dynamixel_workbench_toolbox/dynamixel_item.h
 
 /opt/ros/kinetic/include/ros/advertise_options.h
 ros/forwards.h

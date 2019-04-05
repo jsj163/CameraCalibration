@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/parallels/Autonomy_ws/hw4/src
+CMAKE_SOURCE_DIR = /home/yunfei/Projects/robotAutonomy/CameraCalibration/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/parallels/Autonomy_ws/hw4/build
+CMAKE_BINARY_DIR = /home/yunfei/Projects/robotAutonomy/CameraCalibration/build
 
 # Utility rule file for dynamixel_workbench_msgs_genpy.
 
@@ -63,10 +63,10 @@ cmu-16662-robot-ctrl-master/external/dynamixel-workbench-msgs/dynamixel_workbenc
 .PHONY : cmu-16662-robot-ctrl-master/external/dynamixel-workbench-msgs/dynamixel_workbench_msgs/CMakeFiles/dynamixel_workbench_msgs_genpy.dir/build
 
 cmu-16662-robot-ctrl-master/external/dynamixel-workbench-msgs/dynamixel_workbench_msgs/CMakeFiles/dynamixel_workbench_msgs_genpy.dir/clean:
-	cd /home/parallels/Autonomy_ws/hw4/build/cmu-16662-robot-ctrl-master/external/dynamixel-workbench-msgs/dynamixel_workbench_msgs && $(CMAKE_COMMAND) -P CMakeFiles/dynamixel_workbench_msgs_genpy.dir/cmake_clean.cmake
+	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build/cmu-16662-robot-ctrl-master/external/dynamixel-workbench-msgs/dynamixel_workbench_msgs && $(CMAKE_COMMAND) -P CMakeFiles/dynamixel_workbench_msgs_genpy.dir/cmake_clean.cmake
 .PHONY : cmu-16662-robot-ctrl-master/external/dynamixel-workbench-msgs/dynamixel_workbench_msgs/CMakeFiles/dynamixel_workbench_msgs_genpy.dir/clean
 
 cmu-16662-robot-ctrl-master/external/dynamixel-workbench-msgs/dynamixel_workbench_msgs/CMakeFiles/dynamixel_workbench_msgs_genpy.dir/depend:
-	cd /home/parallels/Autonomy_ws/hw4/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/parallels/Autonomy_ws/hw4/src /home/parallels/Autonomy_ws/hw4/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench-msgs/dynamixel_workbench_msgs /home/parallels/Autonomy_ws/hw4/build /home/parallels/Autonomy_ws/hw4/build/cmu-16662-robot-ctrl-master/external/dynamixel-workbench-msgs/dynamixel_workbench_msgs /home/parallels/Autonomy_ws/hw4/build/cmu-16662-robot-ctrl-master/external/dynamixel-workbench-msgs/dynamixel_workbench_msgs/CMakeFiles/dynamixel_workbench_msgs_genpy.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yunfei/Projects/robotAutonomy/CameraCalibration/src /home/yunfei/Projects/robotAutonomy/CameraCalibration/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench-msgs/dynamixel_workbench_msgs /home/yunfei/Projects/robotAutonomy/CameraCalibration/build /home/yunfei/Projects/robotAutonomy/CameraCalibration/build/cmu-16662-robot-ctrl-master/external/dynamixel-workbench-msgs/dynamixel_workbench_msgs /home/yunfei/Projects/robotAutonomy/CameraCalibration/build/cmu-16662-robot-ctrl-master/external/dynamixel-workbench-msgs/dynamixel_workbench_msgs/CMakeFiles/dynamixel_workbench_msgs_genpy.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : cmu-16662-robot-ctrl-master/external/dynamixel-workbench-msgs/dynamixel_workbench_msgs/CMakeFiles/dynamixel_workbench_msgs_genpy.dir/depend
 

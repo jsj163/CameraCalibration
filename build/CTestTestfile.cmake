@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /home/parallels/Autonomy_ws/hw4/src
-# Build directory: /home/parallels/Autonomy_ws/hw4/build
+# Source directory: /home/yunfei/Projects/robotAutonomy/CameraCalibration/src
+# Build directory: /home/yunfei/Projects/robotAutonomy/CameraCalibration/build
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
@@ -12,4 +12,5 @@ subdirs(cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workb
 subdirs(cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_toolbox)
 subdirs(cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager)
 subdirs(cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager_gui)
+subdirs(planar_segmentation)
 subdirs(cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers)

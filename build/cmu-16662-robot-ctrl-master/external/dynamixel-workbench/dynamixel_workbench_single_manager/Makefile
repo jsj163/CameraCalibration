@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/parallels/Autonomy_ws/hw4/src
+CMAKE_SOURCE_DIR = /home/yunfei/Projects/robotAutonomy/CameraCalibration/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/parallels/Autonomy_ws/hw4/build
+CMAKE_BINARY_DIR = /home/yunfei/Projects/robotAutonomy/CameraCalibration/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -135,14 +135,14 @@ install/local/fast: install/local
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/parallels/Autonomy_ws/hw4/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/parallels/Autonomy_ws/hw4/build/CMakeFiles /home/parallels/Autonomy_ws/hw4/build/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager/CMakeFiles/progress.marks
-	cd /home/parallels/Autonomy_ws/hw4/build && $(MAKE) -f CMakeFiles/Makefile2 cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/parallels/Autonomy_ws/hw4/build/CMakeFiles 0
+	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/yunfei/Projects/robotAutonomy/CameraCalibration/build/CMakeFiles /home/yunfei/Projects/robotAutonomy/CameraCalibration/build/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager/CMakeFiles/progress.marks
+	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(MAKE) -f CMakeFiles/Makefile2 cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yunfei/Projects/robotAutonomy/CameraCalibration/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/parallels/Autonomy_ws/hw4/build && $(MAKE) -f CMakeFiles/Makefile2 cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager/clean
+	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(MAKE) -f CMakeFiles/Makefile2 cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager/clean
 .PHONY : clean
 
 # The main clean target
@@ -152,22 +152,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/parallels/Autonomy_ws/hw4/build && $(MAKE) -f CMakeFiles/Makefile2 cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager/preinstall
+	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(MAKE) -f CMakeFiles/Makefile2 cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/parallels/Autonomy_ws/hw4/build && $(MAKE) -f CMakeFiles/Makefile2 cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager/preinstall
+	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(MAKE) -f CMakeFiles/Makefile2 cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/parallels/Autonomy_ws/hw4/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager/CMakeFiles/single_dynamixel_controller.dir/rule:
-	cd /home/parallels/Autonomy_ws/hw4/build && $(MAKE) -f CMakeFiles/Makefile2 cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager/CMakeFiles/single_dynamixel_controller.dir/rule
+	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(MAKE) -f CMakeFiles/Makefile2 cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager/CMakeFiles/single_dynamixel_controller.dir/rule
 .PHONY : cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager/CMakeFiles/single_dynamixel_controller.dir/rule
 
 # Convenience name for target.
@@ -177,12 +177,12 @@ single_dynamixel_controller: cmu-16662-robot-ctrl-master/external/dynamixel-work
 
 # fast build rule for target.
 single_dynamixel_controller/fast:
-	cd /home/parallels/Autonomy_ws/hw4/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager/CMakeFiles/single_dynamixel_controller.dir/build.make cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager/CMakeFiles/single_dynamixel_controller.dir/build
+	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager/CMakeFiles/single_dynamixel_controller.dir/build.make cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager/CMakeFiles/single_dynamixel_controller.dir/build
 .PHONY : single_dynamixel_controller/fast
 
 # Convenience name for target.
 cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager/CMakeFiles/single_dynamixel_monitor.dir/rule:
-	cd /home/parallels/Autonomy_ws/hw4/build && $(MAKE) -f CMakeFiles/Makefile2 cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager/CMakeFiles/single_dynamixel_monitor.dir/rule
+	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(MAKE) -f CMakeFiles/Makefile2 cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager/CMakeFiles/single_dynamixel_monitor.dir/rule
 .PHONY : cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager/CMakeFiles/single_dynamixel_monitor.dir/rule
 
 # Convenience name for target.
@@ -192,7 +192,7 @@ single_dynamixel_monitor: cmu-16662-robot-ctrl-master/external/dynamixel-workben
 
 # fast build rule for target.
 single_dynamixel_monitor/fast:
-	cd /home/parallels/Autonomy_ws/hw4/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager/CMakeFiles/single_dynamixel_monitor.dir/build.make cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager/CMakeFiles/single_dynamixel_monitor.dir/build
+	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager/CMakeFiles/single_dynamixel_monitor.dir/build.make cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager/CMakeFiles/single_dynamixel_monitor.dir/build
 .PHONY : single_dynamixel_monitor/fast
 
 src/single_dynamixel_controller.o: src/single_dynamixel_controller.cpp.o
@@ -201,7 +201,7 @@ src/single_dynamixel_controller.o: src/single_dynamixel_controller.cpp.o
 
 # target to build an object file
 src/single_dynamixel_controller.cpp.o:
-	cd /home/parallels/Autonomy_ws/hw4/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager/CMakeFiles/single_dynamixel_controller.dir/build.make cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager/CMakeFiles/single_dynamixel_controller.dir/src/single_dynamixel_controller.cpp.o
+	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager/CMakeFiles/single_dynamixel_controller.dir/build.make cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager/CMakeFiles/single_dynamixel_controller.dir/src/single_dynamixel_controller.cpp.o
 .PHONY : src/single_dynamixel_controller.cpp.o
 
 src/single_dynamixel_controller.i: src/single_dynamixel_controller.cpp.i
@@ -210,7 +210,7 @@ src/single_dynamixel_controller.i: src/single_dynamixel_controller.cpp.i
 
 # target to preprocess a source file
 src/single_dynamixel_controller.cpp.i:
-	cd /home/parallels/Autonomy_ws/hw4/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager/CMakeFiles/single_dynamixel_controller.dir/build.make cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager/CMakeFiles/single_dynamixel_controller.dir/src/single_dynamixel_controller.cpp.i
+	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager/CMakeFiles/single_dynamixel_controller.dir/build.make cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager/CMakeFiles/single_dynamixel_controller.dir/src/single_dynamixel_controller.cpp.i
 .PHONY : src/single_dynamixel_controller.cpp.i
 
 src/single_dynamixel_controller.s: src/single_dynamixel_controller.cpp.s
@@ -219,7 +219,7 @@ src/single_dynamixel_controller.s: src/single_dynamixel_controller.cpp.s
 
 # target to generate assembly for a file
 src/single_dynamixel_controller.cpp.s:
-	cd /home/parallels/Autonomy_ws/hw4/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager/CMakeFiles/single_dynamixel_controller.dir/build.make cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager/CMakeFiles/single_dynamixel_controller.dir/src/single_dynamixel_controller.cpp.s
+	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager/CMakeFiles/single_dynamixel_controller.dir/build.make cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager/CMakeFiles/single_dynamixel_controller.dir/src/single_dynamixel_controller.cpp.s
 .PHONY : src/single_dynamixel_controller.cpp.s
 
 src/single_dynamixel_monitor.o: src/single_dynamixel_monitor.cpp.o
@@ -228,7 +228,7 @@ src/single_dynamixel_monitor.o: src/single_dynamixel_monitor.cpp.o
 
 # target to build an object file
 src/single_dynamixel_monitor.cpp.o:
-	cd /home/parallels/Autonomy_ws/hw4/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager/CMakeFiles/single_dynamixel_monitor.dir/build.make cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager/CMakeFiles/single_dynamixel_monitor.dir/src/single_dynamixel_monitor.cpp.o
+	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager/CMakeFiles/single_dynamixel_monitor.dir/build.make cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager/CMakeFiles/single_dynamixel_monitor.dir/src/single_dynamixel_monitor.cpp.o
 .PHONY : src/single_dynamixel_monitor.cpp.o
 
 src/single_dynamixel_monitor.i: src/single_dynamixel_monitor.cpp.i
@@ -237,7 +237,7 @@ src/single_dynamixel_monitor.i: src/single_dynamixel_monitor.cpp.i
 
 # target to preprocess a source file
 src/single_dynamixel_monitor.cpp.i:
-	cd /home/parallels/Autonomy_ws/hw4/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager/CMakeFiles/single_dynamixel_monitor.dir/build.make cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager/CMakeFiles/single_dynamixel_monitor.dir/src/single_dynamixel_monitor.cpp.i
+	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager/CMakeFiles/single_dynamixel_monitor.dir/build.make cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager/CMakeFiles/single_dynamixel_monitor.dir/src/single_dynamixel_monitor.cpp.i
 .PHONY : src/single_dynamixel_monitor.cpp.i
 
 src/single_dynamixel_monitor.s: src/single_dynamixel_monitor.cpp.s
@@ -246,7 +246,7 @@ src/single_dynamixel_monitor.s: src/single_dynamixel_monitor.cpp.s
 
 # target to generate assembly for a file
 src/single_dynamixel_monitor.cpp.s:
-	cd /home/parallels/Autonomy_ws/hw4/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager/CMakeFiles/single_dynamixel_monitor.dir/build.make cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager/CMakeFiles/single_dynamixel_monitor.dir/src/single_dynamixel_monitor.cpp.s
+	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager/CMakeFiles/single_dynamixel_monitor.dir/build.make cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_single_manager/CMakeFiles/single_dynamixel_monitor.dir/src/single_dynamixel_monitor.cpp.s
 .PHONY : src/single_dynamixel_monitor.cpp.s
 
 # Help Target
@@ -281,6 +281,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/parallels/Autonomy_ws/hw4/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

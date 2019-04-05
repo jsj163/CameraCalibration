@@ -1,8 +1,8 @@
-prefix=/home/parallels/Autonomy_ws/hw4/devel
+prefix=/home/yunfei/Projects/robotAutonomy/CameraCalibration/devel
 
 Name: dynamixel_workbench_controllers
 Description: Description of dynamixel_workbench_controllers
 Version: 1.0.0
-Cflags: -I/home/parallels/Autonomy_ws/hw4/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/include
-Libs: -L/home/parallels/Autonomy_ws/hw4/devel/lib 
+Cflags: -I/home/yunfei/Projects/robotAutonomy/CameraCalibration/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/include
+Libs: -L/home/yunfei/Projects/robotAutonomy/CameraCalibration/devel/lib 
 Requires: roscpp sensor_msgs geometry_msgs dynamixel_workbench_msgs dynamixel_workbench_toolbox

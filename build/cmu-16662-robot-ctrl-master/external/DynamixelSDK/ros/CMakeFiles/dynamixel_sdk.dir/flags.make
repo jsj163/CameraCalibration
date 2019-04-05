@@ -6,5 +6,5 @@ CXX_FLAGS = -fPIC   -std=c++11
 
 CXX_DEFINES = -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"dynamixel_sdk\" -Ddynamixel_sdk_EXPORTS
 
-CXX_INCLUDES = -I/home/parallels/Autonomy_ws/hw4/src/cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/include/dynamixel_sdk -I/opt/ros/kinetic/include -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp 
+CXX_INCLUDES = -I/home/yunfei/Projects/robotAutonomy/CameraCalibration/src/cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/include/dynamixel_sdk -I/opt/ros/kinetic/include -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp 
 

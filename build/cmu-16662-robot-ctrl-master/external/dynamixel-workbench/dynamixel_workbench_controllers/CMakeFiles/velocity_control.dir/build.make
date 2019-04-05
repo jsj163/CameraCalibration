@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/parallels/Autonomy_ws/hw4/src
+CMAKE_SOURCE_DIR = /home/yunfei/Projects/robotAutonomy/CameraCalibration/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/parallels/Autonomy_ws/hw4/build
+CMAKE_BINARY_DIR = /home/yunfei/Projects/robotAutonomy/CameraCalibration/build
 
 # Include any dependencies generated for this target.
 include cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/velocity_control.dir/depend.make
@@ -58,17 +58,17 @@ include cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workb
 include cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/velocity_control.dir/flags.make
 
 cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/velocity_control.dir/src/velocity_control.cpp.o: cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/velocity_control.dir/flags.make
-cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/velocity_control.dir/src/velocity_control.cpp.o: /home/parallels/Autonomy_ws/hw4/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/src/velocity_control.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/parallels/Autonomy_ws/hw4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/velocity_control.dir/src/velocity_control.cpp.o"
-	cd /home/parallels/Autonomy_ws/hw4/build/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/velocity_control.dir/src/velocity_control.cpp.o -c /home/parallels/Autonomy_ws/hw4/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/src/velocity_control.cpp
+cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/velocity_control.dir/src/velocity_control.cpp.o: /home/yunfei/Projects/robotAutonomy/CameraCalibration/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/src/velocity_control.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yunfei/Projects/robotAutonomy/CameraCalibration/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/velocity_control.dir/src/velocity_control.cpp.o"
+	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/velocity_control.dir/src/velocity_control.cpp.o -c /home/yunfei/Projects/robotAutonomy/CameraCalibration/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/src/velocity_control.cpp
 
 cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/velocity_control.dir/src/velocity_control.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/velocity_control.dir/src/velocity_control.cpp.i"
-	cd /home/parallels/Autonomy_ws/hw4/build/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/parallels/Autonomy_ws/hw4/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/src/velocity_control.cpp > CMakeFiles/velocity_control.dir/src/velocity_control.cpp.i
+	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yunfei/Projects/robotAutonomy/CameraCalibration/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/src/velocity_control.cpp > CMakeFiles/velocity_control.dir/src/velocity_control.cpp.i
 
 cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/velocity_control.dir/src/velocity_control.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/velocity_control.dir/src/velocity_control.cpp.s"
-	cd /home/parallels/Autonomy_ws/hw4/build/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/parallels/Autonomy_ws/hw4/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/src/velocity_control.cpp -o CMakeFiles/velocity_control.dir/src/velocity_control.cpp.s
+	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yunfei/Projects/robotAutonomy/CameraCalibration/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/src/velocity_control.cpp -o CMakeFiles/velocity_control.dir/src/velocity_control.cpp.s
 
 cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/velocity_control.dir/src/velocity_control.cpp.o.requires:
 
@@ -88,35 +88,35 @@ velocity_control_OBJECTS = \
 # External object files for target velocity_control
 velocity_control_EXTERNAL_OBJECTS =
 
-/home/parallels/Autonomy_ws/hw4/devel/lib/dynamixel_workbench_controllers/velocity_control: cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/velocity_control.dir/src/velocity_control.cpp.o
-/home/parallels/Autonomy_ws/hw4/devel/lib/dynamixel_workbench_controllers/velocity_control: cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/velocity_control.dir/build.make
-/home/parallels/Autonomy_ws/hw4/devel/lib/dynamixel_workbench_controllers/velocity_control: /home/parallels/Autonomy_ws/hw4/devel/lib/libdynamixel_workbench_toolbox.so
-/home/parallels/Autonomy_ws/hw4/devel/lib/dynamixel_workbench_controllers/velocity_control: /home/parallels/Autonomy_ws/hw4/devel/lib/libdynamixel_sdk.so
-/home/parallels/Autonomy_ws/hw4/devel/lib/dynamixel_workbench_controllers/velocity_control: /opt/ros/kinetic/lib/libroscpp.so
-/home/parallels/Autonomy_ws/hw4/devel/lib/dynamixel_workbench_controllers/velocity_control: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
-/home/parallels/Autonomy_ws/hw4/devel/lib/dynamixel_workbench_controllers/velocity_control: /usr/lib/x86_64-linux-gnu/libboost_signals.so
-/home/parallels/Autonomy_ws/hw4/devel/lib/dynamixel_workbench_controllers/velocity_control: /opt/ros/kinetic/lib/librosconsole.so
-/home/parallels/Autonomy_ws/hw4/devel/lib/dynamixel_workbench_controllers/velocity_control: /opt/ros/kinetic/lib/librosconsole_log4cxx.so
-/home/parallels/Autonomy_ws/hw4/devel/lib/dynamixel_workbench_controllers/velocity_control: /opt/ros/kinetic/lib/librosconsole_backend_interface.so
-/home/parallels/Autonomy_ws/hw4/devel/lib/dynamixel_workbench_controllers/velocity_control: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
-/home/parallels/Autonomy_ws/hw4/devel/lib/dynamixel_workbench_controllers/velocity_control: /usr/lib/x86_64-linux-gnu/libboost_regex.so
-/home/parallels/Autonomy_ws/hw4/devel/lib/dynamixel_workbench_controllers/velocity_control: /opt/ros/kinetic/lib/libroscpp_serialization.so
-/home/parallels/Autonomy_ws/hw4/devel/lib/dynamixel_workbench_controllers/velocity_control: /opt/ros/kinetic/lib/libxmlrpcpp.so
-/home/parallels/Autonomy_ws/hw4/devel/lib/dynamixel_workbench_controllers/velocity_control: /opt/ros/kinetic/lib/librostime.so
-/home/parallels/Autonomy_ws/hw4/devel/lib/dynamixel_workbench_controllers/velocity_control: /opt/ros/kinetic/lib/libcpp_common.so
-/home/parallels/Autonomy_ws/hw4/devel/lib/dynamixel_workbench_controllers/velocity_control: /usr/lib/x86_64-linux-gnu/libboost_system.so
-/home/parallels/Autonomy_ws/hw4/devel/lib/dynamixel_workbench_controllers/velocity_control: /usr/lib/x86_64-linux-gnu/libboost_thread.so
-/home/parallels/Autonomy_ws/hw4/devel/lib/dynamixel_workbench_controllers/velocity_control: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
-/home/parallels/Autonomy_ws/hw4/devel/lib/dynamixel_workbench_controllers/velocity_control: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
-/home/parallels/Autonomy_ws/hw4/devel/lib/dynamixel_workbench_controllers/velocity_control: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
-/home/parallels/Autonomy_ws/hw4/devel/lib/dynamixel_workbench_controllers/velocity_control: /usr/lib/x86_64-linux-gnu/libpthread.so
-/home/parallels/Autonomy_ws/hw4/devel/lib/dynamixel_workbench_controllers/velocity_control: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so
-/home/parallels/Autonomy_ws/hw4/devel/lib/dynamixel_workbench_controllers/velocity_control: cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/velocity_control.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/parallels/Autonomy_ws/hw4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/parallels/Autonomy_ws/hw4/devel/lib/dynamixel_workbench_controllers/velocity_control"
-	cd /home/parallels/Autonomy_ws/hw4/build/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/velocity_control.dir/link.txt --verbose=$(VERBOSE)
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/devel/lib/dynamixel_workbench_controllers/velocity_control: cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/velocity_control.dir/src/velocity_control.cpp.o
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/devel/lib/dynamixel_workbench_controllers/velocity_control: cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/velocity_control.dir/build.make
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/devel/lib/dynamixel_workbench_controllers/velocity_control: /home/yunfei/Projects/robotAutonomy/CameraCalibration/devel/lib/libdynamixel_workbench_toolbox.so
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/devel/lib/dynamixel_workbench_controllers/velocity_control: /home/yunfei/Projects/robotAutonomy/CameraCalibration/devel/lib/libdynamixel_sdk.so
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/devel/lib/dynamixel_workbench_controllers/velocity_control: /opt/ros/kinetic/lib/libroscpp.so
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/devel/lib/dynamixel_workbench_controllers/velocity_control: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/devel/lib/dynamixel_workbench_controllers/velocity_control: /usr/lib/x86_64-linux-gnu/libboost_signals.so
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/devel/lib/dynamixel_workbench_controllers/velocity_control: /opt/ros/kinetic/lib/librosconsole.so
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/devel/lib/dynamixel_workbench_controllers/velocity_control: /opt/ros/kinetic/lib/librosconsole_log4cxx.so
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/devel/lib/dynamixel_workbench_controllers/velocity_control: /opt/ros/kinetic/lib/librosconsole_backend_interface.so
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/devel/lib/dynamixel_workbench_controllers/velocity_control: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/devel/lib/dynamixel_workbench_controllers/velocity_control: /usr/lib/x86_64-linux-gnu/libboost_regex.so
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/devel/lib/dynamixel_workbench_controllers/velocity_control: /opt/ros/kinetic/lib/libroscpp_serialization.so
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/devel/lib/dynamixel_workbench_controllers/velocity_control: /opt/ros/kinetic/lib/libxmlrpcpp.so
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/devel/lib/dynamixel_workbench_controllers/velocity_control: /opt/ros/kinetic/lib/librostime.so
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/devel/lib/dynamixel_workbench_controllers/velocity_control: /opt/ros/kinetic/lib/libcpp_common.so
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/devel/lib/dynamixel_workbench_controllers/velocity_control: /usr/lib/x86_64-linux-gnu/libboost_system.so
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/devel/lib/dynamixel_workbench_controllers/velocity_control: /usr/lib/x86_64-linux-gnu/libboost_thread.so
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/devel/lib/dynamixel_workbench_controllers/velocity_control: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/devel/lib/dynamixel_workbench_controllers/velocity_control: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/devel/lib/dynamixel_workbench_controllers/velocity_control: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/devel/lib/dynamixel_workbench_controllers/velocity_control: /usr/lib/x86_64-linux-gnu/libpthread.so
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/devel/lib/dynamixel_workbench_controllers/velocity_control: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/devel/lib/dynamixel_workbench_controllers/velocity_control: cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/velocity_control.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/yunfei/Projects/robotAutonomy/CameraCalibration/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/yunfei/Projects/robotAutonomy/CameraCalibration/devel/lib/dynamixel_workbench_controllers/velocity_control"
+	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/velocity_control.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/velocity_control.dir/build: /home/parallels/Autonomy_ws/hw4/devel/lib/dynamixel_workbench_controllers/velocity_control
+cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/velocity_control.dir/build: /home/yunfei/Projects/robotAutonomy/CameraCalibration/devel/lib/dynamixel_workbench_controllers/velocity_control
 
 .PHONY : cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/velocity_control.dir/build
 
@@ -125,10 +125,10 @@ cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_con
 .PHONY : cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/velocity_control.dir/requires
 
 cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/velocity_control.dir/clean:
-	cd /home/parallels/Autonomy_ws/hw4/build/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers && $(CMAKE_COMMAND) -P CMakeFiles/velocity_control.dir/cmake_clean.cmake
+	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers && $(CMAKE_COMMAND) -P CMakeFiles/velocity_control.dir/cmake_clean.cmake
 .PHONY : cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/velocity_control.dir/clean
 
 cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/velocity_control.dir/depend:
-	cd /home/parallels/Autonomy_ws/hw4/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/parallels/Autonomy_ws/hw4/src /home/parallels/Autonomy_ws/hw4/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers /home/parallels/Autonomy_ws/hw4/build /home/parallels/Autonomy_ws/hw4/build/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers /home/parallels/Autonomy_ws/hw4/build/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/velocity_control.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yunfei/Projects/robotAutonomy/CameraCalibration/src /home/yunfei/Projects/robotAutonomy/CameraCalibration/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers /home/yunfei/Projects/robotAutonomy/CameraCalibration/build /home/yunfei/Projects/robotAutonomy/CameraCalibration/build/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers /home/yunfei/Projects/robotAutonomy/CameraCalibration/build/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/velocity_control.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_controllers/CMakeFiles/velocity_control.dir/depend
 

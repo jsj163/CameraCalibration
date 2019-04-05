@@ -7,7 +7,7 @@ from sys import path as sys_path
 
 from pkgutil import extend_path
 
-__extended_path = "/home/parallels/Autonomy_ws/hw4/src/cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/src".split(";")
+__extended_path = "/home/yunfei/Projects/robotAutonomy/CameraCalibration/src/cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/src".split(";")
 for p in reversed(__extended_path):
     sys_path.insert(0, p)
     del p

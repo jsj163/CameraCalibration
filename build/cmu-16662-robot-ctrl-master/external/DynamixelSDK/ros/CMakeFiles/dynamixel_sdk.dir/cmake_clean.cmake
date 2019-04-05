@@ -8,8 +8,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/group_bulk_write.cpp.o"
   "CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/port_handler.cpp.o"
   "CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/port_handler_linux.cpp.o"
-  "/home/parallels/Autonomy_ws/hw4/devel/lib/libdynamixel_sdk.pdb"
-  "/home/parallels/Autonomy_ws/hw4/devel/lib/libdynamixel_sdk.so"
+  "/home/yunfei/Projects/robotAutonomy/CameraCalibration/devel/lib/libdynamixel_sdk.pdb"
+  "/home/yunfei/Projects/robotAutonomy/CameraCalibration/devel/lib/libdynamixel_sdk.so"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/parallels/Autonomy_ws/hw4/src
+CMAKE_SOURCE_DIR = /home/yunfei/Projects/robotAutonomy/CameraCalibration/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/parallels/Autonomy_ws/hw4/build
+CMAKE_BINARY_DIR = /home/yunfei/Projects/robotAutonomy/CameraCalibration/build
 
 # Utility rule file for clean_test_results.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/parallels/Autonomy_ws/hw4/build
 include CMakeFiles/clean_test_results.dir/progress.make
 
 CMakeFiles/clean_test_results:
-	/usr/bin/python /opt/ros/kinetic/share/catkin/cmake/test/remove_test_results.py /home/parallels/Autonomy_ws/hw4/build/test_results
+	/home/yunfei/bin/python /opt/ros/kinetic/share/catkin/cmake/test/remove_test_results.py /home/yunfei/Projects/robotAutonomy/CameraCalibration/build/test_results
 
 clean_test_results: CMakeFiles/clean_test_results
 clean_test_results: CMakeFiles/clean_test_results.dir/build.make
@@ -71,6 +71,6 @@ CMakeFiles/clean_test_results.dir/clean:
 .PHONY : CMakeFiles/clean_test_results.dir/clean
 
 CMakeFiles/clean_test_results.dir/depend:
-	cd /home/parallels/Autonomy_ws/hw4/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/parallels/Autonomy_ws/hw4/src /home/parallels/Autonomy_ws/hw4/src /home/parallels/Autonomy_ws/hw4/build /home/parallels/Autonomy_ws/hw4/build /home/parallels/Autonomy_ws/hw4/build/CMakeFiles/clean_test_results.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yunfei/Projects/robotAutonomy/CameraCalibration/src /home/yunfei/Projects/robotAutonomy/CameraCalibration/src /home/yunfei/Projects/robotAutonomy/CameraCalibration/build /home/yunfei/Projects/robotAutonomy/CameraCalibration/build /home/yunfei/Projects/robotAutonomy/CameraCalibration/build/CMakeFiles/clean_test_results.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/clean_test_results.dir/depend
 

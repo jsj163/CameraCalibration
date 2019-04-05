@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/parallels/Autonomy_ws/hw4/src
+CMAKE_SOURCE_DIR = /home/yunfei/Projects/robotAutonomy/CameraCalibration/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/parallels/Autonomy_ws/hw4/build
+CMAKE_BINARY_DIR = /home/yunfei/Projects/robotAutonomy/CameraCalibration/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -135,14 +135,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/parallels/Autonomy_ws/hw4/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/parallels/Autonomy_ws/hw4/build/CMakeFiles /home/parallels/Autonomy_ws/hw4/build/cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/progress.marks
-	cd /home/parallels/Autonomy_ws/hw4/build && $(MAKE) -f CMakeFiles/Makefile2 cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/parallels/Autonomy_ws/hw4/build/CMakeFiles 0
+	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/yunfei/Projects/robotAutonomy/CameraCalibration/build/CMakeFiles /home/yunfei/Projects/robotAutonomy/CameraCalibration/build/cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/progress.marks
+	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(MAKE) -f CMakeFiles/Makefile2 cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yunfei/Projects/robotAutonomy/CameraCalibration/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/parallels/Autonomy_ws/hw4/build && $(MAKE) -f CMakeFiles/Makefile2 cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/clean
+	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(MAKE) -f CMakeFiles/Makefile2 cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/clean
 .PHONY : clean
 
 # The main clean target
@@ -152,22 +152,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/parallels/Autonomy_ws/hw4/build && $(MAKE) -f CMakeFiles/Makefile2 cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/preinstall
+	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(MAKE) -f CMakeFiles/Makefile2 cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/parallels/Autonomy_ws/hw4/build && $(MAKE) -f CMakeFiles/Makefile2 cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/preinstall
+	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(MAKE) -f CMakeFiles/Makefile2 cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/parallels/Autonomy_ws/hw4/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/rule:
-	cd /home/parallels/Autonomy_ws/hw4/build && $(MAKE) -f CMakeFiles/Makefile2 cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/rule
+	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(MAKE) -f CMakeFiles/Makefile2 cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/rule
 .PHONY : cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/rule
 
 # Convenience name for target.
@@ -177,12 +177,12 @@ dynamixel_sdk: cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/
 
 # fast build rule for target.
 dynamixel_sdk/fast:
-	cd /home/parallels/Autonomy_ws/hw4/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/build.make cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/build
+	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/build.make cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/build
 .PHONY : dynamixel_sdk/fast
 
 # Convenience name for target.
 cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/roscpp_generate_messages_lisp.dir/rule:
-	cd /home/parallels/Autonomy_ws/hw4/build && $(MAKE) -f CMakeFiles/Makefile2 cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
+	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(MAKE) -f CMakeFiles/Makefile2 cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
 .PHONY : cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -192,12 +192,12 @@ roscpp_generate_messages_lisp: cmu-16662-robot-ctrl-master/external/DynamixelSDK
 
 # fast build rule for target.
 roscpp_generate_messages_lisp/fast:
-	cd /home/parallels/Autonomy_ws/hw4/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/roscpp_generate_messages_lisp.dir/build
+	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/roscpp_generate_messages_lisp.dir/build
 .PHONY : roscpp_generate_messages_lisp/fast
 
 # Convenience name for target.
 cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule:
-	cd /home/parallels/Autonomy_ws/hw4/build && $(MAKE) -f CMakeFiles/Makefile2 cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
+	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(MAKE) -f CMakeFiles/Makefile2 cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
 .PHONY : cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -207,12 +207,12 @@ roscpp_generate_messages_nodejs: cmu-16662-robot-ctrl-master/external/DynamixelS
 
 # fast build rule for target.
 roscpp_generate_messages_nodejs/fast:
-	cd /home/parallels/Autonomy_ws/hw4/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
+	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
 .PHONY : roscpp_generate_messages_nodejs/fast
 
 # Convenience name for target.
 cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/roscpp_generate_messages_eus.dir/rule:
-	cd /home/parallels/Autonomy_ws/hw4/build && $(MAKE) -f CMakeFiles/Makefile2 cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/roscpp_generate_messages_eus.dir/rule
+	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(MAKE) -f CMakeFiles/Makefile2 cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/roscpp_generate_messages_eus.dir/rule
 .PHONY : cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/roscpp_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -222,12 +222,12 @@ roscpp_generate_messages_eus: cmu-16662-robot-ctrl-master/external/DynamixelSDK/
 
 # fast build rule for target.
 roscpp_generate_messages_eus/fast:
-	cd /home/parallels/Autonomy_ws/hw4/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/roscpp_generate_messages_eus.dir/build.make cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/roscpp_generate_messages_eus.dir/build
+	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/roscpp_generate_messages_eus.dir/build.make cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/roscpp_generate_messages_eus.dir/build
 .PHONY : roscpp_generate_messages_eus/fast
 
 # Convenience name for target.
 cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/roscpp_generate_messages_cpp.dir/rule:
-	cd /home/parallels/Autonomy_ws/hw4/build && $(MAKE) -f CMakeFiles/Makefile2 cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(MAKE) -f CMakeFiles/Makefile2 cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
 .PHONY : cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -237,12 +237,12 @@ roscpp_generate_messages_cpp: cmu-16662-robot-ctrl-master/external/DynamixelSDK/
 
 # fast build rule for target.
 roscpp_generate_messages_cpp/fast:
-	cd /home/parallels/Autonomy_ws/hw4/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/roscpp_generate_messages_cpp.dir/build
+	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/roscpp_generate_messages_cpp.dir/build
 .PHONY : roscpp_generate_messages_cpp/fast
 
 # Convenience name for target.
 cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/parallels/Autonomy_ws/hw4/build && $(MAKE) -f CMakeFiles/Makefile2 cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
+	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(MAKE) -f CMakeFiles/Makefile2 cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
 .PHONY : cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -252,12 +252,12 @@ rosgraph_msgs_generate_messages_nodejs: cmu-16662-robot-ctrl-master/external/Dyn
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_nodejs/fast:
-	cd /home/parallels/Autonomy_ws/hw4/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
+	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
 .PHONY : rosgraph_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule:
-	cd /home/parallels/Autonomy_ws/hw4/build && $(MAKE) -f CMakeFiles/Makefile2 cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
+	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(MAKE) -f CMakeFiles/Makefile2 cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
 .PHONY : cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -267,12 +267,12 @@ rosgraph_msgs_generate_messages_eus: cmu-16662-robot-ctrl-master/external/Dynami
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_eus/fast:
-	cd /home/parallels/Autonomy_ws/hw4/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
+	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
 .PHONY : rosgraph_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
 cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/roscpp_generate_messages_py.dir/rule:
-	cd /home/parallels/Autonomy_ws/hw4/build && $(MAKE) -f CMakeFiles/Makefile2 cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/roscpp_generate_messages_py.dir/rule
+	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(MAKE) -f CMakeFiles/Makefile2 cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/roscpp_generate_messages_py.dir/rule
 .PHONY : cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/roscpp_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -282,12 +282,12 @@ roscpp_generate_messages_py: cmu-16662-robot-ctrl-master/external/DynamixelSDK/r
 
 # fast build rule for target.
 roscpp_generate_messages_py/fast:
-	cd /home/parallels/Autonomy_ws/hw4/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/roscpp_generate_messages_py.dir/build.make cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/roscpp_generate_messages_py.dir/build
+	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/roscpp_generate_messages_py.dir/build.make cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/roscpp_generate_messages_py.dir/build
 .PHONY : roscpp_generate_messages_py/fast
 
 # Convenience name for target.
 cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule:
-	cd /home/parallels/Autonomy_ws/hw4/build && $(MAKE) -f CMakeFiles/Makefile2 cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(MAKE) -f CMakeFiles/Makefile2 cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
 .PHONY : cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -297,12 +297,12 @@ rosgraph_msgs_generate_messages_cpp: cmu-16662-robot-ctrl-master/external/Dynami
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_cpp/fast:
-	cd /home/parallels/Autonomy_ws/hw4/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
+	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
 .PHONY : rosgraph_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule:
-	cd /home/parallels/Autonomy_ws/hw4/build && $(MAKE) -f CMakeFiles/Makefile2 cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(MAKE) -f CMakeFiles/Makefile2 cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
 .PHONY : cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -312,12 +312,12 @@ rosgraph_msgs_generate_messages_lisp: cmu-16662-robot-ctrl-master/external/Dynam
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_lisp/fast:
-	cd /home/parallels/Autonomy_ws/hw4/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
+	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
 .PHONY : rosgraph_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
 cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule:
-	cd /home/parallels/Autonomy_ws/hw4/build && $(MAKE) -f CMakeFiles/Makefile2 cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(MAKE) -f CMakeFiles/Makefile2 cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
 .PHONY : cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -327,7 +327,7 @@ rosgraph_msgs_generate_messages_py: cmu-16662-robot-ctrl-master/external/Dynamix
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_py/fast:
-	cd /home/parallels/Autonomy_ws/hw4/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
+	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
 .PHONY : rosgraph_msgs_generate_messages_py/fast
 
 src/dynamixel_sdk/group_bulk_read.o: src/dynamixel_sdk/group_bulk_read.cpp.o
@@ -336,7 +336,7 @@ src/dynamixel_sdk/group_bulk_read.o: src/dynamixel_sdk/group_bulk_read.cpp.o
 
 # target to build an object file
 src/dynamixel_sdk/group_bulk_read.cpp.o:
-	cd /home/parallels/Autonomy_ws/hw4/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/build.make cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/group_bulk_read.cpp.o
+	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/build.make cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/group_bulk_read.cpp.o
 .PHONY : src/dynamixel_sdk/group_bulk_read.cpp.o
 
 src/dynamixel_sdk/group_bulk_read.i: src/dynamixel_sdk/group_bulk_read.cpp.i
@@ -345,7 +345,7 @@ src/dynamixel_sdk/group_bulk_read.i: src/dynamixel_sdk/group_bulk_read.cpp.i
 
 # target to preprocess a source file
 src/dynamixel_sdk/group_bulk_read.cpp.i:
-	cd /home/parallels/Autonomy_ws/hw4/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/build.make cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/group_bulk_read.cpp.i
+	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/build.make cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/group_bulk_read.cpp.i
 .PHONY : src/dynamixel_sdk/group_bulk_read.cpp.i
 
 src/dynamixel_sdk/group_bulk_read.s: src/dynamixel_sdk/group_bulk_read.cpp.s
@@ -354,7 +354,7 @@ src/dynamixel_sdk/group_bulk_read.s: src/dynamixel_sdk/group_bulk_read.cpp.s
 
 # target to generate assembly for a file
 src/dynamixel_sdk/group_bulk_read.cpp.s:
-	cd /home/parallels/Autonomy_ws/hw4/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/build.make cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/group_bulk_read.cpp.s
+	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/build.make cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/group_bulk_read.cpp.s
 .PHONY : src/dynamixel_sdk/group_bulk_read.cpp.s
 
 src/dynamixel_sdk/group_bulk_write.o: src/dynamixel_sdk/group_bulk_write.cpp.o
@@ -363,7 +363,7 @@ src/dynamixel_sdk/group_bulk_write.o: src/dynamixel_sdk/group_bulk_write.cpp.o
 
 # target to build an object file
 src/dynamixel_sdk/group_bulk_write.cpp.o:
-	cd /home/parallels/Autonomy_ws/hw4/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/build.make cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/group_bulk_write.cpp.o
+	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/build.make cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/group_bulk_write.cpp.o
 .PHONY : src/dynamixel_sdk/group_bulk_write.cpp.o
 
 src/dynamixel_sdk/group_bulk_write.i: src/dynamixel_sdk/group_bulk_write.cpp.i
@@ -372,7 +372,7 @@ src/dynamixel_sdk/group_bulk_write.i: src/dynamixel_sdk/group_bulk_write.cpp.i
 
 # target to preprocess a source file
 src/dynamixel_sdk/group_bulk_write.cpp.i:
-	cd /home/parallels/Autonomy_ws/hw4/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/build.make cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/group_bulk_write.cpp.i
+	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/build.make cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/group_bulk_write.cpp.i
 .PHONY : src/dynamixel_sdk/group_bulk_write.cpp.i
 
 src/dynamixel_sdk/group_bulk_write.s: src/dynamixel_sdk/group_bulk_write.cpp.s
@@ -381,7 +381,7 @@ src/dynamixel_sdk/group_bulk_write.s: src/dynamixel_sdk/group_bulk_write.cpp.s
 
 # target to generate assembly for a file
 src/dynamixel_sdk/group_bulk_write.cpp.s:
-	cd /home/parallels/Autonomy_ws/hw4/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/build.make cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/group_bulk_write.cpp.s
+	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/build.make cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/group_bulk_write.cpp.s
 .PHONY : src/dynamixel_sdk/group_bulk_write.cpp.s
 
 src/dynamixel_sdk/group_sync_read.o: src/dynamixel_sdk/group_sync_read.cpp.o
@@ -390,7 +390,7 @@ src/dynamixel_sdk/group_sync_read.o: src/dynamixel_sdk/group_sync_read.cpp.o
 
 # target to build an object file
 src/dynamixel_sdk/group_sync_read.cpp.o:
-	cd /home/parallels/Autonomy_ws/hw4/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/build.make cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/group_sync_read.cpp.o
+	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/build.make cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/group_sync_read.cpp.o
 .PHONY : src/dynamixel_sdk/group_sync_read.cpp.o
 
 src/dynamixel_sdk/group_sync_read.i: src/dynamixel_sdk/group_sync_read.cpp.i
@@ -399,7 +399,7 @@ src/dynamixel_sdk/group_sync_read.i: src/dynamixel_sdk/group_sync_read.cpp.i
 
 # target to preprocess a source file
 src/dynamixel_sdk/group_sync_read.cpp.i:
-	cd /home/parallels/Autonomy_ws/hw4/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/build.make cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/group_sync_read.cpp.i
+	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/build.make cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/group_sync_read.cpp.i
 .PHONY : src/dynamixel_sdk/group_sync_read.cpp.i
 
 src/dynamixel_sdk/group_sync_read.s: src/dynamixel_sdk/group_sync_read.cpp.s
@@ -408,7 +408,7 @@ src/dynamixel_sdk/group_sync_read.s: src/dynamixel_sdk/group_sync_read.cpp.s
 
 # target to generate assembly for a file
 src/dynamixel_sdk/group_sync_read.cpp.s:
-	cd /home/parallels/Autonomy_ws/hw4/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/build.make cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/group_sync_read.cpp.s
+	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/build.make cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/group_sync_read.cpp.s
 .PHONY : src/dynamixel_sdk/group_sync_read.cpp.s
 
 src/dynamixel_sdk/group_sync_write.o: src/dynamixel_sdk/group_sync_write.cpp.o
@@ -417,7 +417,7 @@ src/dynamixel_sdk/group_sync_write.o: src/dynamixel_sdk/group_sync_write.cpp.o
 
 # target to build an object file
 src/dynamixel_sdk/group_sync_write.cpp.o:
-	cd /home/parallels/Autonomy_ws/hw4/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/build.make cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/group_sync_write.cpp.o
+	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/build.make cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/group_sync_write.cpp.o
 .PHONY : src/dynamixel_sdk/group_sync_write.cpp.o
 
 src/dynamixel_sdk/group_sync_write.i: src/dynamixel_sdk/group_sync_write.cpp.i
@@ -426,7 +426,7 @@ src/dynamixel_sdk/group_sync_write.i: src/dynamixel_sdk/group_sync_write.cpp.i
 
 # target to preprocess a source file
 src/dynamixel_sdk/group_sync_write.cpp.i:
-	cd /home/parallels/Autonomy_ws/hw4/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/build.make cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/group_sync_write.cpp.i
+	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/build.make cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/group_sync_write.cpp.i
 .PHONY : src/dynamixel_sdk/group_sync_write.cpp.i
 
 src/dynamixel_sdk/group_sync_write.s: src/dynamixel_sdk/group_sync_write.cpp.s
@@ -435,7 +435,7 @@ src/dynamixel_sdk/group_sync_write.s: src/dynamixel_sdk/group_sync_write.cpp.s
 
 # target to generate assembly for a file
 src/dynamixel_sdk/group_sync_write.cpp.s:
-	cd /home/parallels/Autonomy_ws/hw4/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/build.make cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/group_sync_write.cpp.s
+	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/build.make cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/group_sync_write.cpp.s
 .PHONY : src/dynamixel_sdk/group_sync_write.cpp.s
 
 src/dynamixel_sdk/packet_handler.o: src/dynamixel_sdk/packet_handler.cpp.o
@@ -444,7 +444,7 @@ src/dynamixel_sdk/packet_handler.o: src/dynamixel_sdk/packet_handler.cpp.o
 
 # target to build an object file
 src/dynamixel_sdk/packet_handler.cpp.o:
-	cd /home/parallels/Autonomy_ws/hw4/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/build.make cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/packet_handler.cpp.o
+	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/build.make cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/packet_handler.cpp.o
 .PHONY : src/dynamixel_sdk/packet_handler.cpp.o
 
 src/dynamixel_sdk/packet_handler.i: src/dynamixel_sdk/packet_handler.cpp.i
@@ -453,7 +453,7 @@ src/dynamixel_sdk/packet_handler.i: src/dynamixel_sdk/packet_handler.cpp.i
 
 # target to preprocess a source file
 src/dynamixel_sdk/packet_handler.cpp.i:
-	cd /home/parallels/Autonomy_ws/hw4/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/build.make cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/packet_handler.cpp.i
+	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/build.make cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/packet_handler.cpp.i
 .PHONY : src/dynamixel_sdk/packet_handler.cpp.i
 
 src/dynamixel_sdk/packet_handler.s: src/dynamixel_sdk/packet_handler.cpp.s
@@ -462,7 +462,7 @@ src/dynamixel_sdk/packet_handler.s: src/dynamixel_sdk/packet_handler.cpp.s
 
 # target to generate assembly for a file
 src/dynamixel_sdk/packet_handler.cpp.s:
-	cd /home/parallels/Autonomy_ws/hw4/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/build.make cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/packet_handler.cpp.s
+	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/build.make cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/packet_handler.cpp.s
 .PHONY : src/dynamixel_sdk/packet_handler.cpp.s
 
 src/dynamixel_sdk/port_handler.o: src/dynamixel_sdk/port_handler.cpp.o
@@ -471,7 +471,7 @@ src/dynamixel_sdk/port_handler.o: src/dynamixel_sdk/port_handler.cpp.o
 
 # target to build an object file
 src/dynamixel_sdk/port_handler.cpp.o:
-	cd /home/parallels/Autonomy_ws/hw4/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/build.make cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/port_handler.cpp.o
+	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/build.make cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/port_handler.cpp.o
 .PHONY : src/dynamixel_sdk/port_handler.cpp.o
 
 src/dynamixel_sdk/port_handler.i: src/dynamixel_sdk/port_handler.cpp.i
@@ -480,7 +480,7 @@ src/dynamixel_sdk/port_handler.i: src/dynamixel_sdk/port_handler.cpp.i
 
 # target to preprocess a source file
 src/dynamixel_sdk/port_handler.cpp.i:
-	cd /home/parallels/Autonomy_ws/hw4/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/build.make cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/port_handler.cpp.i
+	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/build.make cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/port_handler.cpp.i
 .PHONY : src/dynamixel_sdk/port_handler.cpp.i
 
 src/dynamixel_sdk/port_handler.s: src/dynamixel_sdk/port_handler.cpp.s
@@ -489,7 +489,7 @@ src/dynamixel_sdk/port_handler.s: src/dynamixel_sdk/port_handler.cpp.s
 
 # target to generate assembly for a file
 src/dynamixel_sdk/port_handler.cpp.s:
-	cd /home/parallels/Autonomy_ws/hw4/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/build.make cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/port_handler.cpp.s
+	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/build.make cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/port_handler.cpp.s
 .PHONY : src/dynamixel_sdk/port_handler.cpp.s
 
 src/dynamixel_sdk/port_handler_linux.o: src/dynamixel_sdk/port_handler_linux.cpp.o
@@ -498,7 +498,7 @@ src/dynamixel_sdk/port_handler_linux.o: src/dynamixel_sdk/port_handler_linux.cpp
 
 # target to build an object file
 src/dynamixel_sdk/port_handler_linux.cpp.o:
-	cd /home/parallels/Autonomy_ws/hw4/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/build.make cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/port_handler_linux.cpp.o
+	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/build.make cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/port_handler_linux.cpp.o
 .PHONY : src/dynamixel_sdk/port_handler_linux.cpp.o
 
 src/dynamixel_sdk/port_handler_linux.i: src/dynamixel_sdk/port_handler_linux.cpp.i
@@ -507,7 +507,7 @@ src/dynamixel_sdk/port_handler_linux.i: src/dynamixel_sdk/port_handler_linux.cpp
 
 # target to preprocess a source file
 src/dynamixel_sdk/port_handler_linux.cpp.i:
-	cd /home/parallels/Autonomy_ws/hw4/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/build.make cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/port_handler_linux.cpp.i
+	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/build.make cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/port_handler_linux.cpp.i
 .PHONY : src/dynamixel_sdk/port_handler_linux.cpp.i
 
 src/dynamixel_sdk/port_handler_linux.s: src/dynamixel_sdk/port_handler_linux.cpp.s
@@ -516,7 +516,7 @@ src/dynamixel_sdk/port_handler_linux.s: src/dynamixel_sdk/port_handler_linux.cpp
 
 # target to generate assembly for a file
 src/dynamixel_sdk/port_handler_linux.cpp.s:
-	cd /home/parallels/Autonomy_ws/hw4/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/build.make cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/port_handler_linux.cpp.s
+	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/build.make cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/port_handler_linux.cpp.s
 .PHONY : src/dynamixel_sdk/port_handler_linux.cpp.s
 
 src/dynamixel_sdk/protocol1_packet_handler.o: src/dynamixel_sdk/protocol1_packet_handler.cpp.o
@@ -525,7 +525,7 @@ src/dynamixel_sdk/protocol1_packet_handler.o: src/dynamixel_sdk/protocol1_packet
 
 # target to build an object file
 src/dynamixel_sdk/protocol1_packet_handler.cpp.o:
-	cd /home/parallels/Autonomy_ws/hw4/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/build.make cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/protocol1_packet_handler.cpp.o
+	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/build.make cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/protocol1_packet_handler.cpp.o
 .PHONY : src/dynamixel_sdk/protocol1_packet_handler.cpp.o
 
 src/dynamixel_sdk/protocol1_packet_handler.i: src/dynamixel_sdk/protocol1_packet_handler.cpp.i
@@ -534,7 +534,7 @@ src/dynamixel_sdk/protocol1_packet_handler.i: src/dynamixel_sdk/protocol1_packet
 
 # target to preprocess a source file
 src/dynamixel_sdk/protocol1_packet_handler.cpp.i:
-	cd /home/parallels/Autonomy_ws/hw4/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/build.make cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/protocol1_packet_handler.cpp.i
+	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/build.make cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/protocol1_packet_handler.cpp.i
 .PHONY : src/dynamixel_sdk/protocol1_packet_handler.cpp.i
 
 src/dynamixel_sdk/protocol1_packet_handler.s: src/dynamixel_sdk/protocol1_packet_handler.cpp.s
@@ -543,7 +543,7 @@ src/dynamixel_sdk/protocol1_packet_handler.s: src/dynamixel_sdk/protocol1_packet
 
 # target to generate assembly for a file
 src/dynamixel_sdk/protocol1_packet_handler.cpp.s:
-	cd /home/parallels/Autonomy_ws/hw4/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/build.make cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/protocol1_packet_handler.cpp.s
+	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/build.make cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/protocol1_packet_handler.cpp.s
 .PHONY : src/dynamixel_sdk/protocol1_packet_handler.cpp.s
 
 src/dynamixel_sdk/protocol2_packet_handler.o: src/dynamixel_sdk/protocol2_packet_handler.cpp.o
@@ -552,7 +552,7 @@ src/dynamixel_sdk/protocol2_packet_handler.o: src/dynamixel_sdk/protocol2_packet
 
 # target to build an object file
 src/dynamixel_sdk/protocol2_packet_handler.cpp.o:
-	cd /home/parallels/Autonomy_ws/hw4/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/build.make cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/protocol2_packet_handler.cpp.o
+	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/build.make cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/protocol2_packet_handler.cpp.o
 .PHONY : src/dynamixel_sdk/protocol2_packet_handler.cpp.o
 
 src/dynamixel_sdk/protocol2_packet_handler.i: src/dynamixel_sdk/protocol2_packet_handler.cpp.i
@@ -561,7 +561,7 @@ src/dynamixel_sdk/protocol2_packet_handler.i: src/dynamixel_sdk/protocol2_packet
 
 # target to preprocess a source file
 src/dynamixel_sdk/protocol2_packet_handler.cpp.i:
-	cd /home/parallels/Autonomy_ws/hw4/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/build.make cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/protocol2_packet_handler.cpp.i
+	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/build.make cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/protocol2_packet_handler.cpp.i
 .PHONY : src/dynamixel_sdk/protocol2_packet_handler.cpp.i
 
 src/dynamixel_sdk/protocol2_packet_handler.s: src/dynamixel_sdk/protocol2_packet_handler.cpp.s
@@ -570,7 +570,7 @@ src/dynamixel_sdk/protocol2_packet_handler.s: src/dynamixel_sdk/protocol2_packet
 
 # target to generate assembly for a file
 src/dynamixel_sdk/protocol2_packet_handler.cpp.s:
-	cd /home/parallels/Autonomy_ws/hw4/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/build.make cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/protocol2_packet_handler.cpp.s
+	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(MAKE) -f cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/build.make cmu-16662-robot-ctrl-master/external/DynamixelSDK/ros/CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/protocol2_packet_handler.cpp.s
 .PHONY : src/dynamixel_sdk/protocol2_packet_handler.cpp.s
 
 # Help Target
@@ -635,6 +635,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/parallels/Autonomy_ws/hw4/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/yunfei/Projects/robotAutonomy/CameraCalibration/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

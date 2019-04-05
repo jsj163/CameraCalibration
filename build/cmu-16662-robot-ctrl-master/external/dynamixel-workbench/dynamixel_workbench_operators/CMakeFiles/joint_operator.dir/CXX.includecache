@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/parallels/Autonomy_ws/hw4/devel/include/dynamixel_workbench_msgs/JointCommand.h
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/devel/include/dynamixel_workbench_msgs/JointCommand.h
 ros/service_traits.h
 -
 dynamixel_workbench_msgs/JointCommandRequest.h
@@ -14,7 +14,7 @@ dynamixel_workbench_msgs/JointCommandRequest.h
 dynamixel_workbench_msgs/JointCommandResponse.h
 -
 
-/home/parallels/Autonomy_ws/hw4/devel/include/dynamixel_workbench_msgs/JointCommandRequest.h
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/devel/include/dynamixel_workbench_msgs/JointCommandRequest.h
 string
 -
 vector
@@ -30,7 +30,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/parallels/Autonomy_ws/hw4/devel/include/dynamixel_workbench_msgs/JointCommandResponse.h
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/devel/include/dynamixel_workbench_msgs/JointCommandResponse.h
 string
 -
 vector
@@ -46,7 +46,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/parallels/Autonomy_ws/hw4/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_operators/src/joint_operator.cpp
+/home/yunfei/Projects/robotAutonomy/CameraCalibration/src/cmu-16662-robot-ctrl-master/external/dynamixel-workbench/dynamixel_workbench_operators/src/joint_operator.cpp
 ros/ros.h
 -
 dynamixel_workbench_msgs/JointCommand.h

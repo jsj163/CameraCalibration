@@ -1,1 +1,1 @@
-/usr/bin/c++  -fPIC   -shared -Wl,-soname,libgtest.so -o libgtest.so CMakeFiles/gtest.dir/src/gtest-all.cc.o  -L/home/parallels/Autonomy_ws/hw4/build/gtest/gtest/src -lpthread -Wl,-rpath,/home/parallels/Autonomy_ws/hw4/build/gtest/gtest/src 
+/usr/bin/c++  -fPIC   -shared -Wl,-soname,libgtest.so -o libgtest.so CMakeFiles/gtest.dir/src/gtest-all.cc.o  -L/home/yunfei/Projects/robotAutonomy/CameraCalibration/build/gtest/gtest/src -lpthread -Wl,-rpath,/home/yunfei/Projects/robotAutonomy/CameraCalibration/build/gtest/gtest/src 
